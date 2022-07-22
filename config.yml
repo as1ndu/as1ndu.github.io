@@ -8,7 +8,7 @@ disqusShortname: asindus-journal
 params:
     homeInfoParams:
         Title: Synchronising Life & Dreams.
-        Content: Can be Info, links, about...
+        Content: Asindu's personal blog.
     socialIcons:
         - name: twitter
           url: https://twitter.com/as1ndu

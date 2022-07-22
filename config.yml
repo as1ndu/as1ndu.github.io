@@ -3,7 +3,6 @@ title: Asindu's Journal
 paginate: 15
 theme: PaperMod
 publishDir: docs
-disqusShortname: asindus-journal
 
 params:
     homeInfoParams:

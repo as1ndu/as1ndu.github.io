@@ -1,0 +1,60 @@
+baseURL: "https://as1ndu.github.io" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+title: Asindu's Journal
+paginate: 15
+theme: PaperMod
+publishDir: docs
+disqusShortname: asindus-journal
+
+params:
+    homeInfoParams:
+        Title: Synchronising Life & Dreams.
+        Content: Can be Info, links, about...
+    socialIcons:
+        - name: twitter
+          url: https://twitter.com/as1ndu
+        - name: github
+          url: "https://github.com/as1ndu"
+        - name: telegram
+          url: "https://t.me/as1ndu"
+        - name: Rss
+          url: "index.xml"
+    ShowShareButtons: true
+    ShowReadingTime: true
+    comments: true
+    ShowCodeCopyButtons: true
+    ShowPostNavLinks: true
+    ShowToc: true
+    TocOpen: true
+    env: production
+
+permalinks:
+  posts: /:year/:month/:day/:title/
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+        taxonomies:
+          category: categories
+          tag: tags
+          series: series
+        menu:
+            main:
+                - name: Archive
+                  url: archives
+                  weight: 5
+                - name: Topics
+                  url: tags/
+                  weight: 10
+                - name: About
+                  url: about/
+                  weight: 10
+                - name: Search
+                  url: search/
+                  weight: 10
+
+
+
+
+
+

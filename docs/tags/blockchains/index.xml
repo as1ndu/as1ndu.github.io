@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>blockchains on Asindu&#39;s Journal</title>
+    <link>https://as1ndu.github.io/tags/blockchains/</link>
+    <description>Recent content in blockchains on Asindu&#39;s Journal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 15 May 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://as1ndu.github.io/tags/blockchains/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why bockchains are not mainstream</title>
+      <link>https://as1ndu.github.io/2018/05/15/why-bockchains-are-not-mainstream/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://as1ndu.github.io/2018/05/15/why-bockchains-are-not-mainstream/</guid>
+      <description>The current state There is a lot of hype about what the global distributed ledger aka &amp;ldquo;Blockchain&amp;rdquo; can do for society. A &amp;ldquo;trust machine&amp;rdquo; as some people call it, that will bring the power of finance, data sovereignty and inclusion to the people, hence rendering centralized intermediaries like Visa, Barclays &amp;amp; Facebook obsolete.
+We shall achieve this by using a combination of robust, battle tested cryptography &amp;amp; game theory.
+While this vision is plausible, realising it is not a easy as it may seem.</description>
+    </item>
+    
+  </channel>
+</rss>

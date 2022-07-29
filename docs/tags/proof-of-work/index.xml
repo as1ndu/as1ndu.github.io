@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>proof-of-work on Asindu&#39;s Journal</title>
-    <link>https://as1ndu.github.io/tags/proof-of-work/</link>
+    <link>https://as1ndu.xyz/tags/proof-of-work/</link>
     <description>Recent content in proof-of-work on Asindu&#39;s Journal</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://as1ndu.github.io/tags/proof-of-work/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://as1ndu.xyz/tags/proof-of-work/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proof of work on layer two</title>
-      <link>https://as1ndu.github.io/2019/11/16/proof-of-work-on-layer-two/</link>
+      <link>https://as1ndu.xyz/2019/11/16/proof-of-work-on-layer-two/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://as1ndu.github.io/2019/11/16/proof-of-work-on-layer-two/</guid>
+      <guid>https://as1ndu.xyz/2019/11/16/proof-of-work-on-layer-two/</guid>
       <description>Ever since Ethereum launched, they have had proof of stake on their road map. The main decision often cited from this transition is the claim that Bitcoin’s proof of work is a “waste of electricity”. Even the creator of C++ complained about it. But now I am talking about why we may need proof of work on layer 2 yet everyone is trying to get rid of it from layer 1 (the networking layer at which consensus is made).</description>
     </item>
     

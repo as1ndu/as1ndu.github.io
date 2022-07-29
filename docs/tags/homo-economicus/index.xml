@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>homo-economicus on Asindu&#39;s Journal</title>
-    <link>https://as1ndu.github.io/tags/homo-economicus/</link>
+    <link>https://as1ndu.xyz/tags/homo-economicus/</link>
     <description>Recent content in homo-economicus on Asindu&#39;s Journal</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 26 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://as1ndu.github.io/tags/homo-economicus/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://as1ndu.xyz/tags/homo-economicus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Wisdom of rationals</title>
-      <link>https://as1ndu.github.io/2020/06/26/the-wisdom-of-rationals/</link>
+      <link>https://as1ndu.xyz/2020/06/26/the-wisdom-of-rationals/</link>
       <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://as1ndu.github.io/2020/06/26/the-wisdom-of-rationals/</guid>
+      <guid>https://as1ndu.xyz/2020/06/26/the-wisdom-of-rationals/</guid>
       <description>For years now I have been fascinated by prediction markets. The source of excitement is the idea is that you can use financial markets to do inference — just like machine learning.
 A famous example of such prediction markets are the orange futures. The orange futures market is one that allows entities to buy oranges in advance. How it works, is that one can pay $1,000 to receive 1,000 oranges that will be delivered next year.</description>
     </item>

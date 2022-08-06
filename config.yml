@@ -3,6 +3,7 @@ title: Asindu's Journal
 paginate: 15
 theme: PaperMod
 publishDir: docs
+googleAnalytics: G-S97K3JXL5P
 
 params:
     homeInfoParams:
@@ -41,16 +42,13 @@ languages:
             main:
                 - name: Archive
                   url: archives
-                  weight: 5
+                  weight: 1
                 - name: Topics
-                  url: tags/
-                  weight: 10
+                  url: tags
+                  weight: 2
                 - name: About
-                  url: about/
-                  weight: 10
-                - name: Search
-                  url: search/
-                  weight: 10
+                  url: about
+                  weight: 3
 
 
 

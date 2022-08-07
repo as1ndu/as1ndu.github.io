@@ -1,7 +1,7 @@
 ---
 title : "The Wisdom of rationals"
 slug : "the-wisdom-of-rationals"
-draft : false
+draft : true
 tags : ["prediction-markets", "homo-economicus"]
 date : "2020-06-26"
 number: "006"

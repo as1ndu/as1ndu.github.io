@@ -1,7 +1,7 @@
 ---
 title : "Pandemic Bonds"
 slug : "fighting-of-disease-pandemics-with-defi"
-draft : false
+draft : true
 tags : ["fintech"]
 date : "2020-02-02"
 lastmod: "2021-02-28"

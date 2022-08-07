@@ -1,7 +1,7 @@
 ---
 title : "Proof of work on layer two"
 slug : "proof-of-work-on-layer-two"
-draft : false
+draft : true
 tags : ["proof-of-work"]
 date : "2019-11-16"
 number: "002"

@@ -1,7 +1,7 @@
 ---
 title : "Why bockchains are not mainstream"
 slug : "why-bockchains-are-not-mainstream"
-draft : false
+draft : true
 tags : ["blockchains"]
 date : "2018-05-15"
 ---

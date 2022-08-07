@@ -1,7 +1,7 @@
 ---
 title : "Mobile Money As Tech"
 slug : "mobile-money-from-product-to-technology"
-draft : false
+draft : true
 tags : ["mobile-money"]
 date : "2018-08-08"
 number: "001"

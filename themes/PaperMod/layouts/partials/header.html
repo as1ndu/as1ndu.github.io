@@ -42,8 +42,8 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            {{- $label_text := (site.Params.label.text | default site.Title) }}
-            {{- if site.Title }}
+            {{- $label_text := (site.Params.label.text | default site.Params.homeInfoParams.Url) }}
+            {{- if site.Params.homeInfoParams.Url }}
             <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
                 {{- if site.Params.label.icon }}
                 {{- $img := resources.Get site.Params.label.icon }}

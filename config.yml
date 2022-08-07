@@ -7,8 +7,9 @@ googleAnalytics: G-S97K3JXL5P
 
 params:
     homeInfoParams:
-        Title: Synchronising Life & Dreams.
-        Content: Asindu's personal blog.
+        Title: Asindu's Journal
+        Content: A personal blog.
+        Url: asindu.xyz
     socialIcons:
         - name: twitter
           url: https://twitter.com/as1ndu

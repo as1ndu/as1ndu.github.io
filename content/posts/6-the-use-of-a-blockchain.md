@@ -1,7 +1,7 @@
 ---
 title : "The use of a blockchain"
 slug : "the-use-of-a-blockchain"
-draft : true
+draft : false
 tags : ["fintech", "blockchain"]
 date : "2021-04-26"
 number: "007"

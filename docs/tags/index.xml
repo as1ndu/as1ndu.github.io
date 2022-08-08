@@ -4,6 +4,70 @@
     <title>Tags on Asindu&#39;s Journal</title>
     <link>https://asindu.xyz/tags/</link>
     <description>Recent content in Tags on Asindu&#39;s Journal</description>
-    <generator>Hugo -- gohugo.io</generator><atom:link href="https://asindu.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 26 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://asindu.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>blockchain</title>
+      <link>https://asindu.xyz/tags/blockchain/</link>
+      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://asindu.xyz/tags/blockchain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>fintech</title>
+      <link>https://asindu.xyz/tags/fintech/</link>
+      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://asindu.xyz/tags/fintech/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>homo-economicus</title>
+      <link>https://asindu.xyz/tags/homo-economicus/</link>
+      <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://asindu.xyz/tags/homo-economicus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>prediction-markets</title>
+      <link>https://asindu.xyz/tags/prediction-markets/</link>
+      <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://asindu.xyz/tags/prediction-markets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>proof-of-work</title>
+      <link>https://asindu.xyz/tags/proof-of-work/</link>
+      <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://asindu.xyz/tags/proof-of-work/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mobile-money</title>
+      <link>https://asindu.xyz/tags/mobile-money/</link>
+      <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://asindu.xyz/tags/mobile-money/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blockchains</title>
+      <link>https://asindu.xyz/tags/blockchains/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://asindu.xyz/tags/blockchains/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

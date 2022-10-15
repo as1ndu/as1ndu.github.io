@@ -2,19 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://asindu.xyz/tags/apl/</loc>
+    <lastmod>2022-10-08T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://asindu.xyz/</loc>
-    <lastmod>2021-04-26T00:00:00+00:00</lastmod>
+    <lastmod>2022-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://asindu.xyz/tags/finance/</loc>
+    <lastmod>2022-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://asindu.xyz/tags/j/</loc>
+    <lastmod>2022-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://asindu.xyz/posts/</loc>
+    <lastmod>2022-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://asindu.xyz/2022/10/08/random-walk-in-2-lines-of-j/</loc>
+    <lastmod>2022-10-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://asindu.xyz/tags/</loc>
+    <lastmod>2022-10-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://asindu.xyz/tags/blockchain/</loc>
     <lastmod>2021-04-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://asindu.xyz/tags/fintech/</loc>
-    <lastmod>2021-04-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://asindu.xyz/posts/</loc>
-    <lastmod>2021-04-26T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://asindu.xyz/tags/</loc>
     <lastmod>2021-04-26T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://asindu.xyz/2021/04/26/the-use-of-a-blockchain/</loc>

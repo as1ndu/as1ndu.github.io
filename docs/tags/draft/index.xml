@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>draft on Asindu&#39;s Journal</title>
+    <link>https://asindu.xyz/tags/draft/</link>
+    <description>Recent content in draft on Asindu&#39;s Journal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 23 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://asindu.xyz/tags/draft/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finaly, the end of JS?</title>
+      <link>https://asindu.xyz/2022/07/23/finaly-the-end-of-js/</link>
+      <pubDate>Sat, 23 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://asindu.xyz/2022/07/23/finaly-the-end-of-js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Draft Post</title>
+      <link>https://asindu.xyz/2018/05/15/draft-post/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://asindu.xyz/2018/05/15/draft-post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Random walk in 5 lines of J</title>
+      <link>https://asindu.xyz/2018/05/15/random-walk-in-5-lines-of-j/</link>
+      <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://asindu.xyz/2018/05/15/random-walk-in-5-lines-of-j/</guid>
+      <description>load &amp;#39;plot&amp;#39; indices =: ? 1000#2 walks =: indices { _1 1 running_sum =: +/\ walks plot running_sum </description>
+    </item>
+    
+  </channel>
+</rss>

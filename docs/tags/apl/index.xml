@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>apl on Asindu&#39;s Journal</title>
+    <link>https://asindu.xyz/tags/apl/</link>
+    <description>Recent content in apl on Asindu&#39;s Journal</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 08 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://asindu.xyz/tags/apl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Random walk in 2 lines of J</title>
+      <link>https://asindu.xyz/2022/10/08/random-walk-in-2-lines-of-j/</link>
+      <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://asindu.xyz/2022/10/08/random-walk-in-2-lines-of-j/</guid>
+      <description>Of all the many programming languages, none has quite caught my attention like the &amp;ldquo;Iversonian&amp;rdquo; programming languages, that is, languages like APL, Shakti, Ivy, BQN and J - the subject of this blog post.
+One misconception is that languages like J are in the same caliber as Brain F**k and other esoteric or golfing languages which are mostly for recreational programming. Languages like J however were designed to be a replacement to traditional maths notation - an interface for thinking or a tool of thought as their inventor Kenneth E.</description>
+    </item>
+    
+  </channel>
+</rss>

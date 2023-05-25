@@ -1,58 +1,14 @@
 baseURL: "https://asindu.xyz" # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 title: Asindu's Journal
-paginate: 15
-theme: PaperMod
+theme: holy
 publishDir: docs
 googleAnalytics: G-S97K3JXL5P
 
 params:
-    homeInfoParams:
-        Title: Asindu's Journal
-        Content: A personal blog.
-        Url: asindu.xyz
-    socialIcons:
-        - name: twitter
-          url: https://twitter.com/as1ndu
-        - name: github
-          url: "https://github.com/as1ndu"
-        - name: telegram
-          url: "https://t.me/as1ndu"
-        - name: Rss
-          url: "index.xml"
-    ShowShareButtons: true
-    ShowReadingTime: true
-    comments: true
-    ShowCodeCopyButtons: true
-    ShowPostNavLinks: true
-    ShowToc: true
-    TocOpen: true
-    env: production
+  copyright: "© Asindu Willfred Drileba"
 
-permalinks:
-  posts: /:year/:month/:day/:title/
-
-languages:
-    en:
-        languageName: "English"
-        weight: 1
-        taxonomies:
-          category: categories
-          tag: tags
-          series: series
-        menu:
-            main:
-                - name: Archive
-                  url: archives
-                  weight: 1
-                - name: Topics
-                  url: tags
-                  weight: 2
-                - name: About
-                  url: about
-                  weight: 3
-
-
-
-
-
-
+menu:
+    main:
+        - name: About
+          url: /about
+          weight: 3

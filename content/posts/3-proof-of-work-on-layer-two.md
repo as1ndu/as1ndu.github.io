@@ -4,7 +4,6 @@ slug : "proof-of-work-on-layer-two"
 draft : false
 tags : ["proof-of-work"]
 date : "2019-11-16"
-number: "002"
 hidden: false
 ---
 

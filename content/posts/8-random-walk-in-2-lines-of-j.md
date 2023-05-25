@@ -23,7 +23,7 @@ see the [installation instructions](https://code.jsoftware.com/wiki/System/Insta
 
 The 1 dimensional random walk is a toy model used in finance for creating what may look like stock market prices.
 In it's simplest form, a 1 dimensional random walk consists of;
-- Several steps (a list of values), and at each step (for each value) it is either up (indicated by `-1`) or down (indicated by `+1`).
+- Several steps (a list of values), and at each step (for each value) it is either up (indicated by `+1`) or down (indicated by `-1`).
 - Note that the value of each step `-1` or `+1` is chosen at random. Hence the term 'random walk'. So a random walk is basically a list of `-1` and `+1` generated at random.
 - To attain the 'synthetic price' or what looks like stock prices, we simply compute the running sum of this list of random `-1`  and  `+1` integers.
 

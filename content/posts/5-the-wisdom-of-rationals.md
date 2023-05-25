@@ -4,7 +4,6 @@ slug : "the-wisdom-of-rationals"
 draft : false
 tags : ["prediction-markets", "homo-economicus"]
 date : "2020-06-26"
-number: "006"
 hidden: false
 ---
 

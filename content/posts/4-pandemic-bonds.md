@@ -1,11 +1,10 @@
 ---
 title : "Pandemic Bonds"
-slug : "fighting-of-disease-pandemics-with-defi"
+slug : "pandemics-bonds"
 draft : false
 tags : ["fintech"]
 date : "2020-02-02"
 lastmod: "2021-02-28"
-number: "004"
 hidden: false
 ---
 

@@ -4,11 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <title>Posts - Asindu&#39;s Journal</title>
+    <title>Proof of work on layer two - Asindu&#39;s Journal</title>
 
     
     
-    <meta name="description" content="" />
+    <meta name="description" content="Ever since Ethereum launched, they have had proof of stake on their road map. The main decision often cited from this transition is the claim that Bitcoin’s proof of work is a “waste of electricity”. Even the creator of C&#43;&#43; complained about it. But now I am talking about why we may need proof of work on layer 2 yet everyone is trying to get rid of it from layer 1 (the networking layer at which consensus is made)." />
     <meta name="author" content="" />
     
 
@@ -63,11 +63,13 @@
 </nav>
 <div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
         <div class="max-w:700 w:full box:content-box">
-<div>
-    <article class="box:border-box pt:64 w:full">
-        <header class="mb:32">
-            <div class="font:40 font:extrabold">Posts</div>
-        </header><div class="
+<article class="box:border-box pt:32">
+    <header class="mb:32">
+        <div class="font:40 font:extrabold">Proof of work on layer two</div>
+        <div class="mt:16 f:fade-60">
+            <time>Nov 16, 2019</time>
+            </div>
+    </header><div class="
     _:where(a):hover{text-decoration-color:fade}
     _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
     _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
@@ -104,7 +106,24 @@
     _:where(video,img){max-width:full}
     _:where(a,mark){text-underline-offset:3}
     _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"><br/>
+"><p>Ever since Ethereum launched, they have had proof of stake on their road map. The main decision often cited from this transition is the claim that Bitcoin’s proof of work is a “waste of electricity”.
+Even the <a href="https://www.youtube.com/watch?v=uTxRF5ag27A">creator of C++ complained about it</a>. But now I am talking about why we may need proof of work on layer 2 yet everyone is trying to get rid of it from layer 1 (the networking layer at which <a href="https://www.investopedia.com/terms/c/consensus-mechanism-cryptocurrency.asp">consensus</a> is made). Why?
+First, before we think of substitutes to proof of work, we need to acknowledge the role of  proof of work in  a system like bitcoin.</p>
+<p>Emin Gün Sirer has a nice <a href="https://twitter.com/el33th4xor/status/1006931729679044608?lang=en">micro lecture</a> explaining what proof of work is.
+The conclusion is that proof of work is a <a href="https://en.wikipedia.org/wiki/Sybil_attack">sybil resistance</a> mechanism. Infact, it was invented exactly for that <a href="https://en.wikipedia.org/wiki/Hashcash">back in 1990’s</a> for Usenet.</p>
+<p>Basically, it’s makes creating a block expensive so as to limit how many blocks can be created with in a fixed time period.
+So if we are to substitute proof of work, then it’s substitute needs to be capable of Sybil resistance or better.</p>
+<h2 id="sybil-attacks-beyond-layer-i">Sybil attacks beyond layer I</h2>
+<p>Proof of Stake is capable of  mitigating sybil&rsquo;s on layer one however, the concerns of Sybil attacks a stretch beyond layer one. For instance,  let’s say I have a layer 2 based messaging app.  How do you stop infinite streams of messages from spammers?
+You have several options ;</p>
+<ul>
+<li>First you can use the <a href="https://www.inc.com/sonya-mann/earn-com-21-co-cryptocurrency-email.html">earn.com</a> model where you require every sender to pay a fee to the recipient.
+Great! but this doesn’t scale properly. Imagine a Reddit forum where you had to pay $2 every-time you want to post a comment. Even if you can afford it, many people will not &amp; you will be the only one in your forum.</li>
+<li>Another option is now to use proof of work. For instance, before you are  allowed to send a message or post on forum, You have to do a small proof of work before you post. You can adjust the difficulty of the pow based on the rate at which someone is posting.</li>
+</ul>
+<p>Proof of work can also be used to establish decentralized identity for reputation systems in a way similar to <a href="https://en.bitcoin.it/wiki/Fidelity_bonds">fidelity bonds</a>.
+They work (fidelity bonds) by someone provably destroying bitcoins, to establish identity. The idea is that destroying bitcoins is expensive, so it’s less likely that the identity is duplicate, as duplicate identities are be expensive to make. Proof of work can also be as expensive as provably burning bitcoins. So instead of destroying bitcoins we can just set a pow difficulty &amp; give agents what ever reputation tokens they deserve as long as they solve a given proof of work puzzle.</p>
+<br/>
     
         <div id="disqus_thread"></div>
 <script type="application/javascript">
@@ -129,49 +148,6 @@
     
 
 </div></article>
-    <ul>
-                <li>
-                    <div class="mb:16 py:24 f:fade-30 f:fade-10:hover transition:150ms;ease-in">
-                        <a class="f:24 font:semibold" href="https://asindu.xyz/posts/random-walk-in-2-lines-of-j/">
-                            <div>Random walk in 2 lines of J</div>
-                        </a>
-                        <div class="mt:12 f:fade-70"><time>Oct 8, 2022</time></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="mb:16 py:24 f:fade-30 f:fade-10:hover transition:150ms;ease-in">
-                        <a class="f:24 font:semibold" href="https://asindu.xyz/posts/the-wisdom-of-rationals/">
-                            <div>The Wisdom of rationals</div>
-                        </a>
-                        <div class="mt:12 f:fade-70"><time>Jun 26, 2020</time></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="mb:16 py:24 f:fade-30 f:fade-10:hover transition:150ms;ease-in">
-                        <a class="f:24 font:semibold" href="https://asindu.xyz/posts/pandemics-bonds/">
-                            <div>Pandemic Bonds</div>
-                        </a>
-                        <div class="mt:12 f:fade-70"><time>Feb 2, 2020</time></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="mb:16 py:24 f:fade-30 f:fade-10:hover transition:150ms;ease-in">
-                        <a class="f:24 font:semibold" href="https://asindu.xyz/posts/proof-of-work-on-layer-two/">
-                            <div>Proof of work on layer two</div>
-                        </a>
-                        <div class="mt:12 f:fade-70"><time>Nov 16, 2019</time></div>
-                    </div>
-                </li>
-                <li>
-                    <div class="mb:16 py:24 f:fade-30 f:fade-10:hover transition:150ms;ease-in">
-                        <a class="f:24 font:semibold" href="https://asindu.xyz/posts/why-bockchains-are-not-mainstream/">
-                            <div>Why bockchains are not mainstream</div>
-                        </a>
-                        <div class="mt:12 f:fade-70"><time>May 15, 2018</time></div>
-                    </div>
-                </li>
-    </ul>
-</div>
 <footer class="py:24">
     <div class="f:fade-30 f:14 mb:8">© Asindu Willfred Drileba</div>
     <div class="f:fade-60 f:12">Theme <a class="f:bold" href="https://github.com/serkodev/holy" _target="_blank">holy</a></div>

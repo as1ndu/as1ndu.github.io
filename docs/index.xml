@@ -1,48 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Asindu&#39;s Journal</title>
     <link>https://asindu.xyz/</link>
     <description>Recent content on Asindu&#39;s Journal</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Sat, 08 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://asindu.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Random walk in 2 lines of J</title>
-      <link>https://asindu.xyz/2022/10/08/random-walk-in-2-lines-of-j/</link>
+      <link>https://asindu.xyz/posts/random-walk-in-2-lines-of-j/</link>
       <pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://asindu.xyz/2022/10/08/random-walk-in-2-lines-of-j/</guid>
+      <guid>https://asindu.xyz/posts/random-walk-in-2-lines-of-j/</guid>
       <description>Of all the many programming languages, none has quite caught my attention like the &amp;ldquo;Iversonian&amp;rdquo; programming languages, that is, languages like APL, Shakti, Ivy, BQN and J - the subject of this blog post.
 One misconception is that languages like J are in the same caliber as Brain F**k and other esoteric or golfing languages which are mostly for recreational programming. Languages like J however were designed to be a replacement to traditional maths notation - an interface for thinking or a tool of thought as their inventor Kenneth E.</description>
     </item>
     
     <item>
-      <title>The use of a blockchain</title>
-      <link>https://asindu.xyz/2021/04/26/the-use-of-a-blockchain/</link>
-      <pubDate>Mon, 26 Apr 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://asindu.xyz/2021/04/26/the-use-of-a-blockchain/</guid>
-      <description>At the time of this writing, the price of Bitcoin is up again and, the &amp;ldquo;blockchain&amp;rdquo; is part of a stack to over 5,000 startups.
-But what exactly is the &amp;ldquo;blockchain&amp;rdquo; proposition? Most information out there seems to be repeating words like &amp;ldquo;decentralized&amp;rdquo; without a coherent explanation, others are simply selling pre-packaged notions of monetary theory.
-Even &amp;ldquo;big brains&amp;rdquo; like Robin Hanson and Bruce Schneir don&amp;rsquo;t seem to understand what exactly the blockchain proposition is 1</description>
-    </item>
-    
-    <item>
       <title>The Wisdom of rationals</title>
-      <link>https://asindu.xyz/2020/06/26/the-wisdom-of-rationals/</link>
+      <link>https://asindu.xyz/posts/the-wisdom-of-rationals/</link>
       <pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://asindu.xyz/2020/06/26/the-wisdom-of-rationals/</guid>
+      <guid>https://asindu.xyz/posts/the-wisdom-of-rationals/</guid>
       <description>For years now I have been fascinated by prediction markets. The source of excitement is the idea is that you can use financial markets to do inference — just like machine learning.
 A famous example of such prediction markets are the orange futures. The orange futures market is one that allows entities to buy oranges in advance. How it works, is that one can pay $1,000 to receive 1,000 oranges that will be delivered next year.</description>
     </item>
     
     <item>
       <title>Pandemic Bonds</title>
-      <link>https://asindu.xyz/2020/02/02/pandemic-bonds/</link>
+      <link>https://asindu.xyz/posts/pandemics-bonds/</link>
       <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://asindu.xyz/2020/02/02/pandemic-bonds/</guid>
+      <guid>https://asindu.xyz/posts/pandemics-bonds/</guid>
       <description>When Bill Gates was asked in a Vox interview 1 on what he feared most, his reply was not climate change or nuclear war.
 Mr. Gates was most worried about pandemics, deadly diseases that spread quickly over large regions, he goes ahead to cite some of the biggest &amp;ldquo;death charts&amp;rdquo; of history.
 These &amp;ldquo;death charts&amp;rdquo;, where several spikes in which a large numbers of people died in a very short period.</description>
@@ -50,29 +40,19 @@ These &amp;ldquo;death charts&amp;rdquo;, where several spikes in which a large 
     
     <item>
       <title>Proof of work on layer two</title>
-      <link>https://asindu.xyz/2019/11/16/proof-of-work-on-layer-two/</link>
+      <link>https://asindu.xyz/posts/proof-of-work-on-layer-two/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://asindu.xyz/2019/11/16/proof-of-work-on-layer-two/</guid>
+      <guid>https://asindu.xyz/posts/proof-of-work-on-layer-two/</guid>
       <description>Ever since Ethereum launched, they have had proof of stake on their road map. The main decision often cited from this transition is the claim that Bitcoin’s proof of work is a “waste of electricity”. Even the creator of C++ complained about it. But now I am talking about why we may need proof of work on layer 2 yet everyone is trying to get rid of it from layer 1 (the networking layer at which consensus is made).</description>
     </item>
     
     <item>
-      <title>Mobile Money As Tech</title>
-      <link>https://asindu.xyz/2018/08/08/mobile-money-as-tech/</link>
-      <pubDate>Wed, 08 Aug 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://asindu.xyz/2018/08/08/mobile-money-as-tech/</guid>
-      <description>Mobile Money is probably the most common tech-narrative in the Ugandan the tech startup space. Unfortunately, the reluctancy of stake holders to upgrade it from a product to a technology will make it useless before we realise its ultimate potential.
-The vision of mobile money that we dream of, is having people send &amp;amp; receive money amongst each other exclusively using 4 digit PINs and SIM Cards for authentication/identification of users.</description>
-    </item>
-    
-    <item>
       <title>Why bockchains are not mainstream</title>
-      <link>https://asindu.xyz/2018/05/15/why-bockchains-are-not-mainstream/</link>
+      <link>https://asindu.xyz/posts/why-bockchains-are-not-mainstream/</link>
       <pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://asindu.xyz/2018/05/15/why-bockchains-are-not-mainstream/</guid>
+      <guid>https://asindu.xyz/posts/why-bockchains-are-not-mainstream/</guid>
       <description>The current state There is a lot of hype about what the global distributed ledger aka &amp;ldquo;Blockchain&amp;rdquo; can do for society. A &amp;ldquo;trust machine&amp;rdquo; as some people call it, that will bring the power of finance, data sovereignty and inclusion to the people, hence rendering centralized intermediaries like Visa, Barclays &amp;amp; Facebook obsolete.
 We shall achieve this by using a combination of robust, battle tested cryptography &amp;amp; game theory.
 While this vision is plausible, realising it is not a easy as it may seem.</description>
@@ -86,7 +66,6 @@ While this vision is plausible, realising it is not a easy as it may seem.</desc
       <guid>https://asindu.xyz/about/</guid>
       <description></description>
     </item>
-    
     
   </channel>
 </rss>

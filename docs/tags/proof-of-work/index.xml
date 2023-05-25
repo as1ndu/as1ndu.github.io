@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>proof-of-work on Asindu&#39;s Journal</title>
     <link>https://asindu.xyz/tags/proof-of-work/</link>
     <description>Recent content in proof-of-work on Asindu&#39;s Journal</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Sat, 16 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://asindu.xyz/tags/proof-of-work/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proof of work on layer two</title>
-      <link>https://asindu.xyz/2019/11/16/proof-of-work-on-layer-two/</link>
+      <link>https://asindu.xyz/posts/proof-of-work-on-layer-two/</link>
       <pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://asindu.xyz/2019/11/16/proof-of-work-on-layer-two/</guid>
+      <guid>https://asindu.xyz/posts/proof-of-work-on-layer-two/</guid>
       <description>Ever since Ethereum launched, they have had proof of stake on their road map. The main decision often cited from this transition is the claim that Bitcoin’s proof of work is a “waste of electricity”. Even the creator of C++ complained about it. But now I am talking about why we may need proof of work on layer 2 yet everyone is trying to get rid of it from layer 1 (the networking layer at which consensus is made).</description>
     </item>
     

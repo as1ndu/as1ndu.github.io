@@ -3,6 +3,7 @@ title: Asindu's Journal
 theme: holy
 publishDir: docs
 googleAnalytics: G-S97K3JXL5P
+disqusShortname: asindu
 
 params:
   copyright: "© Asindu Willfred Drileba"

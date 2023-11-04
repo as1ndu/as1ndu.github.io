@@ -2,8 +2,6 @@ baseURL = "https://asindu.xyz"
 languageCode = "en-us"
 title = "Asindu's Journal"
 publishDir = "docs"
-disqusShortname = "asindu"
-googleAnalytics = "G-S97K3JXL5P"
 author = "Asindu Drileba"
 theme = "lines"
 pygmentsCodeFences = false
@@ -14,6 +12,13 @@ minify = true
 
 [taxonomies]
   tag = "tags"
+
+[services]
+  [services.googleAnalytics]
+    ID = "G-S97K3JXL5P"
+  [services.disqus]
+    shortname = "asindu"
+
 
 [privacy]
   [privacy.disqus]

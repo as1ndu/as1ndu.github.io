@@ -75,18 +75,18 @@ minify = true
 [menu]
   [[menu.main]]
     identifier = "index"
-    name       = "Asindu's Journal"
+    name       = "ø Asindu's Journal"
     url        = "/"
     weight     = 1
 
   [[menu.main]]
     identifier = "about"
-    name       = "About"
+    name       = "∞ About"
     url        = "/about"
     weight     = 2
 
   [[menu.main]]
     identifier = "rss"
-    name       = "RSS"
+    name       = "§ RSS"
     url        = "/atom.xml"
     weight     = 3

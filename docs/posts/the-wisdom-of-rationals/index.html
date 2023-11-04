@@ -1,207 +1,25 @@
-<!DOCTYPE html>
-<html><head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-    <title>The Wisdom of rationals - Asindu&#39;s Journal</title>
-
-    
-    
-    <meta name="description" content="For years now I have been fascinated by prediction markets. The source of excitement is the idea is that you can use financial markets to do inference — just like machine learning.
-A famous example of such prediction markets are the orange futures. The orange futures market is one that allows entities to buy oranges in advance. How it works, is that one can pay $1,000 to receive 1,000 oranges that will be delivered next year." />
-    <meta name="author" content="" />
-    
-
-    <link href="https://unpkg.com/@master/normal.css" rel="stylesheet">
-    <script src="https://unpkg.com/@master/style@1.5.0"></script>
-    <script src="https://unpkg.com/@master/styles@1.13.0"></script>
-    <script src="https://unpkg.com/master-styles-group"></script>
-    <script src="https://unpkg.com/themes.js"></script>
-    <script>window.themes = window.themes || new window.Themes()</script>
-
-    <style>
-        :root {
-            --font-sans: "Inter var", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-        }
-    </style>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-S97K3JXL5P"></script>
-<script>
-var doNotTrack = false;
-if (!doNotTrack) {
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'G-S97K3JXL5P', { 'anonymize_ip': false });
-}
-</script>
-
-
-</head>
-<body class="bg:fade-84@dark font:fade-16@dark font:sans">
-    <nav class="w:full h:90 fixed bg:fade-84/.95@dark bg:white z:1000">
-    <div class="
-        h:full
-        w:full
-        max-w:1200
-        mx:auto
-        px:32
-        d:flex
-        align-items:center
-    ">
-        <div>
-            <a href="/" class="mr-3 font:extralight">
-              
-              Asindu&#39;s Journal
-              
-            </a>
-        </div>
-
-        <div class="ml:auto">
-            
-            
-            
-            
-            <a class="
-                font:semibold
-                font:fade
-                font:fade-10:hover
-                font:fade-30.active
-                px:8
-                transition:150ms;ease-in
-                
-            " href="/about" title="">About</a>
-            
-        </div>
-    </div>
-</nav>
-<div class="d:flex flex:column@<=sm pt:90 px:24 jc:center gap:44 word-break:break-word">
-        <div class="max-w:700 w:full box:content-box">
-<article class="box:border-box pt:32">
-    <header class="mb:32">
-        <div class="font:40 font:extrabold">The Wisdom of rationals</div>
-        <div class="mt:16 f:fade-60">
-            <time>Jun 26, 2020</time>
-            </div>
-    </header><div class="
-    _:where(a):hover{text-decoration-color:fade}
-    _:where(a){text-decoration:2;underline;fade-10;_text-decoration-color:fade-70@dark}
-    _:where(blockquote){bl:5;solid;fade-76/.1;_bl:5;solid;fade-34/.1@dark}
-    _:where(code){font:90%;_v:middle}
-    _:where(code:not(.highlight_*,pre_*)){p:2;6;_r:4}
-    _:where(del){text-decoration:1;line-through;fade-68;_text-decoration-color:red-64@dark}
-    _:where(figcaption){text:14;_p:10;20;0;_width:fit;_mx:auto;_font:fade-56;_font:fade-57@dark}
-    _:where(h1){font:40;_font:extrabold}
-    _:where(h1,h2,h3)+:where(h1,h2,h3){mt:.5em}
-    _:where(h1,h2,h3,h4,h5,h6){mt:2em}
-    _:where(h2){mb:1em;_font:32}
-    _:where(h3){font:24}
-    _:where(h4){font:20}
-    _:where(h5){font:16}
-    _:where(h6){font:14}
-    _:where(li)::marker{font:fade-44;_font:fade-68@dark}
-    _:where(li){pl:.375em}
-    _:where(mark){text-decoration:1;underline;#fce016;_bg:transparent;_text-decoration-color:rgb(252;224;22/.5)@dark}
-    _:where(p,li){font:fade-76;_font:16;_line-height:1.65;_font:fade-34@dark}
-    _:where(p,pre,blockquote,figure,ul,ol,table){my:1.125em}
-    >:first-child{mt:0!}
-    _:where(pre){p:20;_r:8;_overflow:auto}
-    _:where(pre,code:not(.highlight_*)){bg:fade-2;_bg:fade-92!@dark}
-    _:where(strong,b,a,code:not(.highlight_*),mark,del){font:fade-92;_font:fade-12@dark}
-    _:where(table){width:full;_border-spacing:0}
-    _:where(td){v:baseline}
-    _:where(td,th):first-child{pl:0}
-    _:where(td,th):last-child{pr:0}
-    _:where(td,th){bb:1;solid;fade-92/.06;_p:6;_b:fade-4/.04@dark}
-    _:where(th){font:fade-78;_font:14;_text:left;_font:fade-12@dark}
-    _:where(th,p_code,li_code,a,mark){font:semibold;_font:medium@dark}
-    _:where(ul){list-style-type:disc}
-    _:where(ul,ol,blockquote){pl:1.5em}
-    _:where(video,img){max-width:full}
-    _:where(a,mark){text-underline-offset:3}
-    _:where(hr){h:2;_bg:fade-10;_bg:fade-70@dark;_my:3em}
-"><p>For years now I have been fascinated by prediction markets. The source of excitement is  the idea is that you can use financial markets to do <a href="https://en.wikipedia.org/wiki/Inference">inference</a> — just like machine learning.</p>
-<p>A famous example of such prediction markets are the orange futures. The orange futures market is one that allows entities
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=author content="Asindu Drileba - https://asindu.xyz"><title>The Wisdom of rationals | Asindu's Journal</title>
+<meta name=description content="A public journal about thoughts going through Asindu's head."><meta name=twitter:card content="summary"><meta name=twitter:title content="The Wisdom of rationals"><meta name=twitter:description content="For years now I have been fascinated by prediction markets. The source of excitement is the idea is that you can use financial markets to do inference — just like machine learning.
+A famous example of such prediction markets are the orange futures. The orange futures market is one that allows entities to buy oranges in advance. How it works, is that one can pay $1,000 to receive 1,000 oranges that will be delivered next year."><meta property="og:title" content="The Wisdom of rationals"><meta property="og:description" content="For years now I have been fascinated by prediction markets. The source of excitement is the idea is that you can use financial markets to do inference — just like machine learning.
+A famous example of such prediction markets are the orange futures. The orange futures market is one that allows entities to buy oranges in advance. How it works, is that one can pay $1,000 to receive 1,000 oranges that will be delivered next year."><meta property="og:type" content="article"><meta property="og:url" content="https://asindu.xyz/posts/the-wisdom-of-rationals/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2020-06-26T00:00:00+00:00"><meta property="article:modified_time" content="2020-06-26T00:00:00+00:00"><meta itemprop=name content="The Wisdom of rationals"><meta itemprop=description content="For years now I have been fascinated by prediction markets. The source of excitement is the idea is that you can use financial markets to do inference — just like machine learning.
+A famous example of such prediction markets are the orange futures. The orange futures market is one that allows entities to buy oranges in advance. How it works, is that one can pay $1,000 to receive 1,000 oranges that will be delivered next year."><meta itemprop=datePublished content="2020-06-26T00:00:00+00:00"><meta itemprop=dateModified content="2020-06-26T00:00:00+00:00"><meta itemprop=wordCount content="953"><meta itemprop=keywords content="prediction-markets,homo-economicus,"><link rel=canonical href=https://asindu.xyz/posts/the-wisdom-of-rationals/><link rel=dns-prefetch href=https://www.google-analytics.com><link href=https://www.google-analytics.com rel=preconnect crossorigin><link rel=alternate type=application/atom+xml title="Asindu's Journal" href=https://asindu.xyzatom.xml><link rel=alternate type=application/json title="Asindu's Journal" href=https://asindu.xyzfeed.json><link rel="shortcut icon" type=image/png href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII="><style>*,:after,:before{box-sizing:border-box;padding:0}body{font:1rem/1.5 '-apple-system',BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif;text-rendering:optimizeSpeed;background-color:#191919}.posts hr{margin-top:0;margin-bottom:0;margin-right:.5rem;margin-left:.5rem;height:1px;border:none;border-bottom:1px #ecdbba;flex:1 0 1rem}main{max-width:70ch;padding:2ch;margin:auto}a,body{color:#ecdbba}::selection,a:focus,a:hover{color:#c84b31}.meta{margin:0 0 2.5rem}.tags::before{content:"\2022";margin-left:1rem}code,pre{color:#fff;font-family:San Francisco Mono,Monaco,consolas,lucida console,dejavu sans mono,bitstream vera sans mono,monospace;font-size:normal;border:1px solid #ecdbba;font-size:small}code{padding:.1rem;border:none}pre{padding:.5rem;overflow-x:auto}pre code{border:none}img{max-width:100%;border:1px solid #2d4263}hr{background:#2d4263;height:1px;border:0}ul{list-style-type:square}ul,ol{padding-left:1.2rem}header li,footer li{display:inline;color:#c84b31}header a,footer a{text-decoration:none}header ul,footer ul{justify-content:space-between;display:flex}h1,h2,h3,h4,h5,h6{color:#c84b31}[aria-current=page]{color:#c84b31}header,section,footer{padding:1rem 0}blockquote{border-left:5px solid #ecdbba;padding-left:1rem}.posts ul,header ul,footer ul{list-style:none}.posts,header ul,footer ul{padding:0}.posts li{align-items:center;display:flex;justify-content:space-between;margin-bottom:.7rem}.posts li a,.posts li div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-decoration:none}.posts li time{padding-left:1rem;white-space:nowrap;font-variant-numeric:tabular-nums}time{color:#fff}.hash{opacity:.25;text-decoration:none}table{border-collapse:collapse;text-align:left;width:100%}table tr{background:#fff;border-bottom:1px solid}table th,table td{padding:10px 20px}a.footnote-ref{color:#c84b31}</style><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","articleSection":"posts","name":"The Wisdom of rationals","headline":"The Wisdom of rationals","alternativeHeadline":"","description":"For years now I have been fascinated by prediction markets. The source of excitement is the idea is that you can use financial markets to do inference — just like machine learning.\nA famous example of such prediction markets are the orange futures. The orange futures market is one that allows entities to buy oranges in advance. How it works, is that one can pay $1,000 to receive 1,000 oranges that will be delivered next year.","inLanguage":"en-us","isFamilyFriendly":"true","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/asindu.xyz\/posts\/the-wisdom-of-rationals\/"},"author":{"@type":"Person","name":"Asindu Drileba"},"creator":{"@type":"Person","name":"Asindu Drileba"},"accountablePerson":{"@type":"Person","name":"Asindu Drileba"},"copyrightHolder":"Asindu\u0027s Journal","copyrightYear":"2020","dateCreated":"2020-06-26T00:00:00.00Z","datePublished":"2020-06-26T00:00:00.00Z","dateModified":"2020-06-26T00:00:00.00Z","publisher":{"@type":"Organization","name":"Asindu's Journal","url":"https://asindu.xyz","logo":{"@type":"ImageObject","url":"https:\/\/asindu.xyz","width":"32","height":"32"}},"image":"https://asindu.xyz","url":"https:\/\/asindu.xyz\/posts\/the-wisdom-of-rationals\/","wordCount":"953","genre":["prediction-markets","homo-economicus"],"keywords":["prediction-markets","homo-economicus"]}</script></head><body><main><header><nav><ul><li><a href=/>Asindu's Journal</a></li><li><a href=/about>About</a></li><li><a href=/atom.xml>RSS</a></li></ul></nav></header><hr><section><h2 itemprop="name headline">The Wisdom of rationals</h2><p class=meta><time itemprop=datePublished datetime=2020-06-26>June 26, 2020</time> &bull;
+<a href=/tags/prediction-markets>prediction-markets</a>, <a href=/tags/homo-economicus>homo-economicus</a></p><span itemprop=articleBody><p>For years now I have been fascinated by prediction markets. The source of excitement is the idea is that you can use financial markets to do <a href=https://en.wikipedia.org/wiki/Inference>inference</a> — just like machine learning.</p><p>A famous example of such prediction markets are the orange futures. The orange futures market is one that allows entities
 to buy oranges in advance.
 How it works, is that one can pay $1,000 to receive 1,000 oranges that will be delivered next year.
-An interesting side effect of this orange futures market is how it <a href="https://selectabstracts.wordpress.com/2011/11/16/can-orange-juice-help-forecast-the-weather/">accurately predicts temperatures in certain locations</a> more specifically, the temperature of the locations where the oranges are from.</p>
-<p>But how is information on temperature reflected in the market meant for selling oranges? Well, what actually happens, is that the <a href="https://www.wsj.com/articles/orange-juice-futures-soar-as-weather-turns-cold-1416604154">orange futures prices rise towards cold weather</a> and drop towards warm weather.</p>
-<p>This phenomenon can be easily explained by the fact that cold weather reduces orange yields thus causing prices to rise (reasoning from the perspective of supply &amp; demand).
+An interesting side effect of this orange futures market is how it <a href=https://selectabstracts.wordpress.com/2011/11/16/can-orange-juice-help-forecast-the-weather/>accurately predicts temperatures in certain locations</a> more specifically, the temperature of the locations where the oranges are from.</p><p>But how is information on temperature reflected in the market meant for selling oranges? Well, what actually happens, is that the <a href=https://www.wsj.com/articles/orange-juice-futures-soar-as-weather-turns-cold-1416604154>orange futures prices rise towards cold weather</a> and drop towards warm weather.</p><p>This phenomenon can be easily explained by the fact that cold weather reduces orange yields thus causing prices to rise (reasoning from the perspective of supply & demand).
 This explanation however doesn&rsquo;t account for the fact that the market prices start reacting to temperature changes
-<em>before</em> they occur. It is as if the market knew what the temperature would be <em>in the future</em>. Hence the name prediction markets.</p>
-<hr>
-<h2 id="how-to-buy-information-from-the-future">How to buy information from the future</h2>
-<p>In the example above, predicting temperatures was just a side effect of the orange futures market.
+<em>before</em> they occur. It is as if the market knew what the temperature would be <em>in the future</em>. Hence the name prediction markets.</p><hr><h2 id=how-to-buy-information-from-the-future>How to buy information from the future <a href=#how-to-buy-information-from-the-future class=hash>#</a></h2><p>In the example above, predicting temperatures was just a side effect of the orange futures market.
 But how do we design a market to predict an explicit event? For example, say you want to know if it will
-rain tomorrow.</p>
-<ul>
-<li>Step 1: Declare an event that will reveal this information  —  Say you want a market that can predict the weather.
-For the rain example we can declare the event &ldquo;It will rain tomorrow&rdquo;.</li>
-<li>Step 2: Define events outcome  —  Formalize the outcomes of the event. The event &ldquo;It will rain tomorrow&rdquo; has two out comes <em>Yes</em> and <em>No</em>.</li>
-<li>Step 3: Sell betting tickets  —  Sell tickets for the event outcomes &ldquo;It will rain tomorrow&rdquo;. Buyers of the tickets have two options
-<em>Yes</em> tickets and <em>No</em> tickets at equal prices. Buyers are allowed to trade tickets with each other.
-<ul>
-<li>If it <em>does rain tomorrow</em>, those with <strong>Yes</strong> tickets receive money 2 times the price of the tickets &amp; those with <strong>No</strong>
-get nothing.</li>
-<li>If it <em>does not rain</em>, those with <strong>Yes</strong> tickets get nothing &amp; those with <strong>No</strong> tickets get money 2 times the price
-of the ticket.</li>
-</ul>
-</li>
-</ul>
-<p>Loosely following assumptions made by prediction market theory, the true information on the event outcome for &ldquo;It will rain tomorrow&rdquo; will be
-reflected reflected in the prices at which buyers are trading the tickets. <em>The ticket with the highest price is the event outcome that is most likely to occur</em>. If <strong>Yes</strong> tickets are selling for <em>$2</em> &amp; <strong>No</strong> tickets are selling for <em>$1</em>. Then we would assume that it will probably rain tomorrow.</p>
-<h2 id="the-assumptions-of-prediction-markets">The assumptions of prediction markets</h2>
-<p>Prediction markets operate upon 3 main assumptions. The first assumption is that markets are made up exclusively of 3 types agents.
-A classification of these agents is as follows.</p>
-<ol>
-<li><strong>The pure gambler</strong>, this one doesn’t have the necessary meteorological information. He/She is simply betting at random.</li>
-<li><strong>The accurate information trader</strong>, these traders have information they think points to the fact that it will rain &amp; they are right.</li>
-<li><strong>Inaccurate information traders</strong>, have information they think points to the fact that it will rain. <em>But</em> they are wrong.</li>
-</ol>
-<p>The second assumption, is that <strong>The Information is predictable</strong>, this means that amongst all the market participants, at least agent is an <strong>Accurate information trader</strong>.</p>
-<p>The last assumption is that people in these market agents will perform a <strong>Rational participation</strong>. Rational participation means that, speculators  will always prefer to place bets on event outcomes which they think they will make money &amp; they will decline from participating in bets where they think they will lose money. For instance, a rational person should not be a pure gambler because they have higher  chances of making  money by betting on information they know at least something about.</p>
-<p>The accurate information trader on the other hand will flourish in this market as they will always have the edge in the market &amp; thus make money off clueless gamblers &amp; people signaling wrong information. Meanwhile, agents that always bet on wrong information will go bust or switch to markets where they do better. This is what makes prediction makers so resistant to market manipulation, <em>it’s a system where agents signaling wrong information actively subsidizes people signaling  correct information.</em></p>
-<p>In theory, markets that repeat themselves should improve with every iteration (since most agents that signal wrong information are bust).
-Provided all agents have access to finite amounts of money.</p>
-<h2 id="how-to-break-a-prediction-market">How to break a prediction market</h2>
-<p>Prediction markets may be highly resistant to manipulation, but that does not mean they cannot break.
+rain tomorrow.</p><ul><li>Step 1: Declare an event that will reveal this information  —  Say you want a market that can predict the weather.
+For the rain example we can declare the event &ldquo;It will rain tomorrow&rdquo;.</li><li>Step 2: Define events outcome  —  Formalize the outcomes of the event. The event &ldquo;It will rain tomorrow&rdquo; has two out comes <em>Yes</em> and <em>No</em>.</li><li>Step 3: Sell betting tickets  —  Sell tickets for the event outcomes &ldquo;It will rain tomorrow&rdquo;. Buyers of the tickets have two options
+<em>Yes</em> tickets and <em>No</em> tickets at equal prices. Buyers are allowed to trade tickets with each other.<ul><li>If it <em>does rain tomorrow</em>, those with <strong>Yes</strong> tickets receive money 2 times the price of the tickets & those with <strong>No</strong>
+get nothing.</li><li>If it <em>does not rain</em>, those with <strong>Yes</strong> tickets get nothing & those with <strong>No</strong> tickets get money 2 times the price
+of the ticket.</li></ul></li></ul><p>Loosely following assumptions made by prediction market theory, the true information on the event outcome for &ldquo;It will rain tomorrow&rdquo; will be
+reflected reflected in the prices at which buyers are trading the tickets. <em>The ticket with the highest price is the event outcome that is most likely to occur</em>. If <strong>Yes</strong> tickets are selling for <em>$2</em> & <strong>No</strong> tickets are selling for <em>$1</em>. Then we would assume that it will probably rain tomorrow.</p><h2 id=the-assumptions-of-prediction-markets>The assumptions of prediction markets <a href=#the-assumptions-of-prediction-markets class=hash>#</a></h2><p>Prediction markets operate upon 3 main assumptions. The first assumption is that markets are made up exclusively of 3 types agents.
+A classification of these agents is as follows.</p><ol><li><strong>The pure gambler</strong>, this one doesn’t have the necessary meteorological information. He/She is simply betting at random.</li><li><strong>The accurate information trader</strong>, these traders have information they think points to the fact that it will rain & they are right.</li><li><strong>Inaccurate information traders</strong>, have information they think points to the fact that it will rain. <em>But</em> they are wrong.</li></ol><p>The second assumption, is that <strong>The Information is predictable</strong>, this means that amongst all the market participants, at least agent is an <strong>Accurate information trader</strong>.</p><p>The last assumption is that people in these market agents will perform a <strong>Rational participation</strong>. Rational participation means that, speculators will always prefer to place bets on event outcomes which they think they will make money & they will decline from participating in bets where they think they will lose money. For instance, a rational person should not be a pure gambler because they have higher chances of making money by betting on information they know at least something about.</p><p>The accurate information trader on the other hand will flourish in this market as they will always have the edge in the market & thus make money off clueless gamblers & people signaling wrong information. Meanwhile, agents that always bet on wrong information will go bust or switch to markets where they do better. This is what makes prediction makers so resistant to market manipulation, <em>it’s a system where agents signaling wrong information actively subsidizes people signaling correct information.</em></p><p>In theory, markets that repeat themselves should improve with every iteration (since most agents that signal wrong information are bust).
+Provided all agents have access to finite amounts of money.</p><h2 id=how-to-break-a-prediction-market>How to break a prediction market <a href=#how-to-break-a-prediction-market class=hash>#</a></h2><p>Prediction markets may be highly resistant to manipulation, but that does not mean they cannot break.
 For a market to continue doing correct inference (accurate predictions), the sum of money held by the
 class of <strong>Accurate Information traders</strong> should always be greater than the sum of money collectively owned by the rest of the agents.
 This is because all agents have finite amounts of money. And it will not be possible to offset noise incorporated into the market by
 agents with bad information.
-This may however improve in subsequent iterations of the market (agents signaling wrong information go bust) thus giving prediction markets a self healing like property.</p>
-<p>It is often mentioned that prediction markets are based on &ldquo;The wisdom of the crowds&rdquo; &amp; that creates a false analogy where people this it works for the same reason democracy does, but they are actually based on the wisdom of the rationals, <em>a system where people don’t talk about what they don’t know</em>.</p>
-</div><br/>
-
-    
-        <div id="disqus_thread"></div>
-<script type="application/javascript">
-    window.disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "asindu" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-    
-
-</article>
-<footer class="py:24">
-    <div class="f:fade-30 f:14 mb:8">© Asindu Willfred Drileba</div>
-    <div class="f:fade-60 f:12">Theme <a class="f:bold" href="https://github.com/serkodev/holy" _target="_blank">holy</a></div>
-</footer></div>
-    </div>
-</body>
-
-</html>
+This may however improve in subsequent iterations of the market (agents signaling wrong information go bust) thus giving prediction markets a self healing like property.</p><p>It is often mentioned that prediction markets are based on &ldquo;The wisdom of the crowds&rdquo; & that creates a false analogy where people this it works for the same reason democracy does, but they are actually based on the wisdom of the rationals, <em>a system where people don’t talk about what they don’t know</em>.</p></span></section><hr><footer><nav><ul><li>© 2023 Asindu Drileba.</li></ul></nav></footer></main></body></html>

@@ -1,0 +1,87 @@
+baseURL = "https://asindu.xyz"
+languageCode = "en-us"
+title = "Asindu's Journal"
+publishDir = "docs"
+disqusShortname = "asindu"
+googleAnalytics = "G-S97K3JXL5P"
+author = "Asindu Drileba"
+theme = "lines"
+pygmentsCodeFences = false
+pygmentsUseClasses = false
+paginate = 1000
+minify = true
+
+
+[taxonomies]
+  tag = "tags"
+
+[privacy]
+  [privacy.disqus]
+    disable = false
+  [privacy.googleAnalytics]
+    disable = false
+  [privacy.instagram]
+    disable = true
+  [privacy.twitter]
+    disable = true
+  [privacy.vimeo]
+    disable = true
+  [privacy.youtube]
+    disable = true
+
+[Author]
+  name = "Asindu Drileba"
+
+[params]
+  description = "A public journal about thoughts going through Asindu's head."
+  author = "Asindu Drileba"
+  copyright = "© Asindu Drileba"
+  logo = ""
+
+[frontmatter]
+  date  = [":filename", ":default"]
+  author = "Asindu Drileba"
+  github = ""
+  facebook = ""
+  og_image = ""
+  sitename = ""
+  twitter = ""
+
+[permalinks]
+  pages = "/:slug"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML"]
+
+[outputFormats.RSS]
+  mediatype = "application/rss"
+  baseName = "atom"
+
+[outputFormats.JSON]
+  mediatype = "application/json"
+  baseName = "feed"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[menu]
+  [[menu.main]]
+    identifier = "index"
+    name       = "Asindu's Journal"
+    url        = "/"
+    weight     = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+    weight     = 2
+
+  [[menu.main]]
+    identifier = "rss"
+    name       = "RSS"
+    url        = "/atom.xml"
+    weight     = 3

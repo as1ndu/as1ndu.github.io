@@ -1,0 +1,270 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Asindu's Journal</title><description>A public journal about thoughts going through Asindu's head.</description><link>https://asindu.xyz</link><language>en</language><copyright>Copyright 2023, Asindu Drileba</copyright><lastBuildDate>Sat, 08 Oct 2022 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="http://asindu.xyz/atom.xml" rel="self" type="application/atom+xml"/><item><title>Random walk in 2 lines of J</title><link>https://asindu.xyz/posts/random-walk-in-2-lines-of-j/</link><description>&lt;p>Of all the many programming languages, none has quite caught my attention like the &amp;ldquo;Iversonian&amp;rdquo;
+programming languages, that is, languages like &lt;a href="https://tryapl.org/">APL&lt;/a>, &lt;a href="https://estradajke.github.io/k9-simples/k9/index.html">Shakti&lt;/a>, &lt;a href="https://pkg.go.dev/robpike.io/ivy">Ivy&lt;/a>, &lt;a href="https://mlochbaum.github.io/BQN/">BQN&lt;/a> and &lt;a href="http://www.jsoftware.com/">J&lt;/a> - the subject of this blog post.&lt;/p>
+&lt;p>One misconception is that languages like J are in the same caliber as &lt;a href="https://en.wikipedia.org/wiki/Brainfuck">Brain F**k&lt;/a> and other &lt;a href="https://esolangs.org/wiki/Main_Page">esoteric&lt;/a> or &lt;a href="https://github.com/topics/golfing-language">golfing&lt;/a> languages which are mostly for recreational programming.
+Languages like J however were designed to be a replacement to traditional maths notation - an interface for thinking or a &lt;a href="https://www.jsoftware.com/papers/tot.htm">tool of thought&lt;/a> as their inventor &lt;a href="https://en.wikipedia.org/wiki/Kenneth_E._Iverson">Kenneth E. Iverson&lt;/a> called them in his Turing Award lecture.&lt;/p>
+&lt;p>In this blog post I am going to introduce the J programming language by using it as a &amp;ldquo;tool of thought&amp;rdquo; to explain the 1 dimensional random walk.&lt;/p>
+&lt;hr>
+&lt;p>To try out the code yourself you will have to install the J interpreter. The easiest way to get it working on Mac is through running the &lt;a href="https://formulae.brew.sh/cask/j">brew formula&lt;/a> &lt;code>brew install --cask j&lt;/code>. For other platforms,
+see the &lt;a href="https://code.jsoftware.com/wiki/System/Installation/J903/Zips">installation instructions&lt;/a>.&lt;/p>
+&lt;h2 id="first-a-random-walk-in-5-lines">First, a random walk in 5 lines. &lt;a href="#first-a-random-walk-in-5-lines" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The 1 dimensional random walk is a toy model used in finance for creating what may look like stock market prices.
+In it&amp;rsquo;s simplest form, a 1 dimensional random walk consists of;&lt;/p>
+&lt;ul>
+&lt;li>Several steps (a list of values), and at each step (for each value) it is either up (indicated by &lt;code>+1&lt;/code>) or down (indicated by &lt;code>-1&lt;/code>).&lt;/li>
+&lt;li>Note that the value of each step &lt;code>-1&lt;/code> or &lt;code>+1&lt;/code> is chosen at random. Hence the term &amp;lsquo;random walk&amp;rsquo;. So a random walk is basically a list of &lt;code>-1&lt;/code> and &lt;code>+1&lt;/code> generated at random.&lt;/li>
+&lt;li>To attain the &amp;lsquo;synthetic price&amp;rsquo; or what looks like stock prices, we simply compute the running sum of this list of random &lt;code>-1&lt;/code> and &lt;code>+1&lt;/code> integers.&lt;/li>
+&lt;/ul>
+&lt;p>The entire toy model of prices we described above is created using the J code below. Let me describe how.&lt;/p>
+&lt;pre>&lt;code class="language-j">load 'plot' NB. Import the utility for plotting charts
+indices =: ? 100#2 NB. Generate indices
+walks =: indices { _1 1 NB. Use indices to create list of -1 &amp;amp; +1 integers
+running_sum =: +/\ walks NB. Compute synthetic price
+plot running_sum NB. Plot the running sum
+&lt;/code>&lt;/pre>
+&lt;h3 id="generating-indices">Generating indices. &lt;a href="#generating-indices" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>An index refers to the position of an item in a list. For example, the list &lt;code>1 2 3 4&lt;/code> has the indices &lt;code>0&lt;/code> for &lt;code>1&lt;/code>, &lt;code>2&lt;/code>, &lt;code>3&lt;/code>, with the index &lt;code>0&lt;/code> referring to &lt;code>1&lt;/code>, the index &lt;code>1&lt;/code> referring to &lt;code>2&lt;/code>, the index &lt;code>2&lt;/code> referring to &lt;code>3&lt;/code> and the index &lt;code>3&lt;/code> referring to &lt;code>4&lt;/code>.&lt;/p>
+&lt;p>Line 2, &lt;code>indices =: ? 100#2&lt;/code> generates indices as follows.
+The &lt;code>#&lt;/code> symbol takes in two values &lt;code>2&lt;/code> and &lt;code>100&lt;/code> and what it does is that it &amp;ldquo;copies&amp;rdquo; &lt;code>2&lt;/code> into an list &lt;code>100&lt;/code> times. For example &lt;code>5#1&lt;/code> copies &lt;code>1&lt;/code> five times to give &lt;code>1 1 1 1 1&lt;/code>. So &lt;code>100#2&lt;/code> returns &lt;code>2 2 2 2 2 2 2 2 2 2 ... 2&lt;/code> up to the 100&amp;rsquo;th &lt;code>2&lt;/code>.&lt;/p>
+&lt;p>The &lt;code>?&lt;/code> symbol generates random numbers, you can think of it as rolling a dice. For example, &lt;code>? 5&lt;/code> may randomly return &lt;code>0&lt;/code>, &lt;code>1&lt;/code>, &lt;code>2&lt;/code>, &lt;code>3&lt;/code> or &lt;code>4&lt;/code>. So &lt;code>? 5&lt;/code> can be read as &amp;ldquo;generate a random number below 5&amp;rdquo;, &lt;code>0&lt;/code> is included since the values &lt;code>?&lt;/code> generates are always greater than or equal to &lt;code>0&lt;/code>.&lt;/p>
+&lt;p>And finally to generate a list of random numbers, we simply give &lt;code>?&lt;/code> a list of numbers for example &lt;code>? 3 3 3 3 3&lt;/code> may generate &lt;code>1 1 0 2 2&lt;/code> i.e 5 random numbers under &lt;code>3&lt;/code>.
+Recall that in line 2, &lt;code>100#2&lt;/code> generates a list of one hundred &lt;code>2&lt;/code>&amp;rsquo;s. &lt;code>?&lt;/code> then takes the list of one hundred &lt;code>2&lt;/code>&amp;rsquo;s and for each &lt;code>2&lt;/code> it generates a random number less than &lt;code>2&lt;/code> i.e &lt;code>0&lt;/code> or &lt;code>1&lt;/code>.&lt;/p>
+&lt;p>&lt;code>? 100#2&lt;/code> can be read as &amp;ldquo;generate a list one hundred 2&amp;rsquo;s and for each item in the list, generate a random integer less that 2&amp;rdquo;. This will return a random list of 100 items made up of exclusively 1&amp;rsquo;s and 0&amp;rsquo;s looking like &lt;code>0 0 1 1 0 0 1 1 1 0 0 1 0 1 0 1 1 0 1 0 1 1 0 1 ...&lt;/code>. We then store this in a variable called &lt;code>indices&lt;/code> using &lt;code>=:&lt;/code>&lt;/p>
+&lt;p>This is what we shall use as our indices.&lt;/p>
+&lt;h3 id="use-indices-to-create-list-of--1--1-integers">Use indices to create list of -1 &amp;amp; +1 integers. &lt;a href="#use-indices-to-create-list-of--1--1-integers" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>In line 3, we use our list of 0&amp;rsquo;s and 1&amp;rsquo;s as indices to generate a random walk (random list made up of -1&amp;rsquo;s &amp;amp; +1&amp;rsquo;s).
+To do this, we use the symbol &lt;code>{&lt;/code> in &lt;code>indices { _1 1&lt;/code> that takes in two sets of values, first is the variable &lt;code>indices&lt;/code> which is a list of randomly generated 1&amp;rsquo;s &amp;amp; 0&amp;rsquo;s. On the other side of &lt;code>{&lt;/code> is &lt;code>_1 1&lt;/code>, which represent the directions of our random walk &lt;code>_1&lt;/code> for &lt;code>-1&lt;/code> (down) and &lt;code>1&lt;/code> for &lt;code>+1&lt;/code> or (up).&lt;/p>
+&lt;p>What &lt;code>{&lt;/code> does is that it &amp;ldquo;pulls&amp;rdquo; items from a list given an index.
+The list &lt;code>_1 1&lt;/code> has the indices &lt;code>0&lt;/code> for &lt;code>_1&lt;/code> and &lt;code>1&lt;/code> for &lt;code>1&lt;/code>, recall that an index refers to the position of an item in the list. So the statement &lt;code>0 { _1 1&lt;/code> would return &lt;code>_1&lt;/code> and &lt;code>1 { _1 1&lt;/code> returns &lt;code>1&lt;/code> from the list.&lt;/p>
+&lt;p>A list of indices would also return a list of items, for instance &lt;code>1 0 0 1 { _1 1&lt;/code> would return &lt;code>1 _1 _1 1&lt;/code>. Which is similar to what &lt;code>indices { _1 1&lt;/code> is doing. Since &lt;code>indices&lt;/code> is a list of random one hundred 1&amp;rsquo;s and 0&amp;rsquo;s it will also randomly pull out a list of &lt;code>_1&lt;/code> and &lt;code>1&lt;/code> thus giving us a list like &lt;code>_1 _1 1 1 _1 _1 _1 _1 _1 _1 1 _1 ...&lt;/code> up to the one hundredth index. Which is the random walk of 100 steps.&lt;/p>
+&lt;p>We also store this list into a variable &lt;code>walks&lt;/code> using &lt;code>=:&lt;/code>.&lt;/p>
+&lt;h3 id="compute-the-synthetic-prices">Compute the synthetic prices. &lt;a href="#compute-the-synthetic-prices" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>In line 4 we use &lt;code>+/\&lt;/code> the running sum of the random walk. For example &lt;code>+/\ 1 1 1 1 1 1 1&lt;/code> computes the running sum of seven 1&amp;rsquo;s, which gives us &lt;code>1 2 3 4 5 6 7&lt;/code>. Which is exactly what we do with &lt;code>+/\ walks&lt;/code>.&lt;/p>
+&lt;p>Since &lt;code>walks&lt;/code> is made up of randomly generated &lt;code>_1&lt;/code> and &lt;code>1&lt;/code>, it&amp;rsquo;s running sum will equally fluctuate up and down. The running sum of &lt;code>1 _1 1 _1 _1 _1 1 1 1 _1 _1&lt;/code> will look like &lt;code>1 0 1 0 _1 _2 _1 0 1 0 _1&lt;/code>&lt;/p>
+&lt;p>The running sum (synthetic price) &lt;code>+/\ walks&lt;/code> is then stored inside the variable &lt;code>running_sum&lt;/code> with &lt;code>=:&lt;/code>&lt;/p>
+&lt;h2 id="a-random-walk-in-2-lines">A random walk in 2 lines. &lt;a href="#a-random-walk-in-2-lines" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>This post was supposed how to create a random walk in 2 lines of J. So below is the exact code above refactored to run in two lines.&lt;/p>
+&lt;pre>&lt;code class="language-j">load 'plot' NB. Import the plot library
+plot +/\ (?100#2) { _1 1 NB. Plot synthetic price/ random walk
+&lt;/code>&lt;/pre>
+&lt;h3 id="adjusting-step-size">Adjusting step size &lt;a href="#adjusting-step-size" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>&lt;code>100&lt;/code> denotes the number of steps the random walk takes. The more the steps the closer to actual stock prices the plot will look like.&lt;/p>
+&lt;h4 id="random-walk-of-100-steps">Random Walk of 100 steps &lt;a href="#random-walk-of-100-steps" class="hash">#&lt;/a>&lt;/h4>
+&lt;p>&lt;img src="http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/100.png" alt="Random Walk of 100 steps" loading="lazy" />
+&lt;/p>
+&lt;h4 id="random-walk-of-200-steps">Random Walk of 200 steps &lt;a href="#random-walk-of-200-steps" class="hash">#&lt;/a>&lt;/h4>
+&lt;p>&lt;img src="http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/200.png" alt="Random Walk of 200 steps" loading="lazy" />
+&lt;/p>
+&lt;h4 id="random-walk-of-500-steps">Random Walk of 500 steps &lt;a href="#random-walk-of-500-steps" class="hash">#&lt;/a>&lt;/h4>
+&lt;p>&lt;img src="http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/500.png" alt="Random Walk of 500 steps" loading="lazy" />
+&lt;/p>
+&lt;h4 id="random-walk-of-1000-steps">Random Walk of 1,000 steps &lt;a href="#random-walk-of-1000-steps" class="hash">#&lt;/a>&lt;/h4>
+&lt;p>&lt;img src="http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/1000.png" alt="Random Walk of 1,000 steps" loading="lazy" />
+&lt;/p>
+&lt;h4 id="random-walk-of-10000-steps">Random Walk of 10,000 steps &lt;a href="#random-walk-of-10000-steps" class="hash">#&lt;/a>&lt;/h4>
+&lt;p>&lt;img src="http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/10000.png" alt="Random Walk of 10,000 steps" loading="lazy" />
+&lt;/p></description><author>hi@asindu.xyz (Asindu Drileba)</author><guid>https://asindu.xyz/posts/random-walk-in-2-lines-of-j/</guid><pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate></item><item><title>The Wisdom of rationals</title><link>https://asindu.xyz/posts/the-wisdom-of-rationals/</link><description>&lt;p>For years now I have been fascinated by prediction markets. The source of excitement is the idea is that you can use financial markets to do &lt;a href="https://en.wikipedia.org/wiki/Inference">inference&lt;/a> — just like machine learning.&lt;/p>
+&lt;p>A famous example of such prediction markets are the orange futures. The orange futures market is one that allows entities
+to buy oranges in advance.
+How it works, is that one can pay $1,000 to receive 1,000 oranges that will be delivered next year.
+An interesting side effect of this orange futures market is how it &lt;a href="https://selectabstracts.wordpress.com/2011/11/16/can-orange-juice-help-forecast-the-weather/">accurately predicts temperatures in certain locations&lt;/a> more specifically, the temperature of the locations where the oranges are from.&lt;/p>
+&lt;p>But how is information on temperature reflected in the market meant for selling oranges? Well, what actually happens, is that the &lt;a href="https://www.wsj.com/articles/orange-juice-futures-soar-as-weather-turns-cold-1416604154">orange futures prices rise towards cold weather&lt;/a> and drop towards warm weather.&lt;/p>
+&lt;p>This phenomenon can be easily explained by the fact that cold weather reduces orange yields thus causing prices to rise (reasoning from the perspective of supply &amp;amp; demand).
+This explanation however doesn&amp;rsquo;t account for the fact that the market prices start reacting to temperature changes
+&lt;em>before&lt;/em> they occur. It is as if the market knew what the temperature would be &lt;em>in the future&lt;/em>. Hence the name prediction markets.&lt;/p>
+&lt;hr>
+&lt;h2 id="how-to-buy-information-from-the-future">How to buy information from the future &lt;a href="#how-to-buy-information-from-the-future" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>In the example above, predicting temperatures was just a side effect of the orange futures market.
+But how do we design a market to predict an explicit event? For example, say you want to know if it will
+rain tomorrow.&lt;/p>
+&lt;ul>
+&lt;li>Step 1: Declare an event that will reveal this information  —  Say you want a market that can predict the weather.
+For the rain example we can declare the event &amp;ldquo;It will rain tomorrow&amp;rdquo;.&lt;/li>
+&lt;li>Step 2: Define events outcome  —  Formalize the outcomes of the event. The event &amp;ldquo;It will rain tomorrow&amp;rdquo; has two out comes &lt;em>Yes&lt;/em> and &lt;em>No&lt;/em>.&lt;/li>
+&lt;li>Step 3: Sell betting tickets  —  Sell tickets for the event outcomes &amp;ldquo;It will rain tomorrow&amp;rdquo;. Buyers of the tickets have two options
+&lt;em>Yes&lt;/em> tickets and &lt;em>No&lt;/em> tickets at equal prices. Buyers are allowed to trade tickets with each other.
+&lt;ul>
+&lt;li>If it &lt;em>does rain tomorrow&lt;/em>, those with &lt;strong>Yes&lt;/strong> tickets receive money 2 times the price of the tickets &amp;amp; those with &lt;strong>No&lt;/strong>
+get nothing.&lt;/li>
+&lt;li>If it &lt;em>does not rain&lt;/em>, those with &lt;strong>Yes&lt;/strong> tickets get nothing &amp;amp; those with &lt;strong>No&lt;/strong> tickets get money 2 times the price
+of the ticket.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;p>Loosely following assumptions made by prediction market theory, the true information on the event outcome for &amp;ldquo;It will rain tomorrow&amp;rdquo; will be
+reflected reflected in the prices at which buyers are trading the tickets. &lt;em>The ticket with the highest price is the event outcome that is most likely to occur&lt;/em>. If &lt;strong>Yes&lt;/strong> tickets are selling for &lt;em>$2&lt;/em> &amp;amp; &lt;strong>No&lt;/strong> tickets are selling for &lt;em>$1&lt;/em>. Then we would assume that it will probably rain tomorrow.&lt;/p>
+&lt;h2 id="the-assumptions-of-prediction-markets">The assumptions of prediction markets &lt;a href="#the-assumptions-of-prediction-markets" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Prediction markets operate upon 3 main assumptions. The first assumption is that markets are made up exclusively of 3 types agents.
+A classification of these agents is as follows.&lt;/p>
+&lt;ol>
+&lt;li>&lt;strong>The pure gambler&lt;/strong>, this one doesn’t have the necessary meteorological information. He/She is simply betting at random.&lt;/li>
+&lt;li>&lt;strong>The accurate information trader&lt;/strong>, these traders have information they think points to the fact that it will rain &amp;amp; they are right.&lt;/li>
+&lt;li>&lt;strong>Inaccurate information traders&lt;/strong>, have information they think points to the fact that it will rain. &lt;em>But&lt;/em> they are wrong.&lt;/li>
+&lt;/ol>
+&lt;p>The second assumption, is that &lt;strong>The Information is predictable&lt;/strong>, this means that amongst all the market participants, at least agent is an &lt;strong>Accurate information trader&lt;/strong>.&lt;/p>
+&lt;p>The last assumption is that people in these market agents will perform a &lt;strong>Rational participation&lt;/strong>. Rational participation means that, speculators will always prefer to place bets on event outcomes which they think they will make money &amp;amp; they will decline from participating in bets where they think they will lose money. For instance, a rational person should not be a pure gambler because they have higher chances of making money by betting on information they know at least something about.&lt;/p>
+&lt;p>The accurate information trader on the other hand will flourish in this market as they will always have the edge in the market &amp;amp; thus make money off clueless gamblers &amp;amp; people signaling wrong information. Meanwhile, agents that always bet on wrong information will go bust or switch to markets where they do better. This is what makes prediction makers so resistant to market manipulation, &lt;em>it’s a system where agents signaling wrong information actively subsidizes people signaling correct information.&lt;/em>&lt;/p>
+&lt;p>In theory, markets that repeat themselves should improve with every iteration (since most agents that signal wrong information are bust).
+Provided all agents have access to finite amounts of money.&lt;/p>
+&lt;h2 id="how-to-break-a-prediction-market">How to break a prediction market &lt;a href="#how-to-break-a-prediction-market" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Prediction markets may be highly resistant to manipulation, but that does not mean they cannot break.
+For a market to continue doing correct inference (accurate predictions), the sum of money held by the
+class of &lt;strong>Accurate Information traders&lt;/strong> should always be greater than the sum of money collectively owned by the rest of the agents.
+This is because all agents have finite amounts of money. And it will not be possible to offset noise incorporated into the market by
+agents with bad information.
+This may however improve in subsequent iterations of the market (agents signaling wrong information go bust) thus giving prediction markets a self healing like property.&lt;/p>
+&lt;p>It is often mentioned that prediction markets are based on &amp;ldquo;The wisdom of the crowds&amp;rdquo; &amp;amp; that creates a false analogy where people this it works for the same reason democracy does, but they are actually based on the wisdom of the rationals, &lt;em>a system where people don’t talk about what they don’t know&lt;/em>.&lt;/p></description><author>hi@asindu.xyz (Asindu Drileba)</author><guid>https://asindu.xyz/posts/the-wisdom-of-rationals/</guid><pubDate>Fri, 26 Jun 2020 00:00:00 +0000</pubDate></item><item><title>Pandemic Bonds</title><link>https://asindu.xyz/posts/pandemics-bonds/</link><description>&lt;p>When Bill Gates was asked in a Vox interview &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> on what he feared most, his reply was not climate change or nuclear war.&lt;/p>
+&lt;p>Mr. Gates was most worried about pandemics, deadly diseases that spread quickly over large regions, he goes ahead to cite some of the biggest &amp;ldquo;death charts&amp;rdquo; of history.&lt;/p>
+&lt;p>These &amp;ldquo;death charts&amp;rdquo;, where several spikes in which a large numbers of people died in a very short period.&lt;/p>
+&lt;p>The first &amp;ldquo;death chart&amp;rdquo; he mentions is World War I, the second one is World War II, the third spike or &amp;ldquo;death chart&amp;rdquo; was about two times bigger than World War I (50 million deaths), but it was not caused by a war, it was the spanish flu &lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>. This isn&amp;rsquo;t even the worst case, pandemics like the the black plague killed over 200 million (60% of Europe&amp;rsquo;s population at the time) about 2 times a bigger death toll than any war we have ever had&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>.&lt;/p>
+&lt;hr>
+&lt;h2 id="pandemics--preparedness">Pandemics &amp;amp; Preparedness &lt;a href="#pandemics--preparedness" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Pandemics are real &amp;amp; unpredictable as we have seen with Ebola &lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>, SARs &lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup>, and at the time of this writing, the Corona virus&lt;sup id="fnref:6">&lt;a href="#fn:6" class="footnote-ref" role="doc-noteref">6&lt;/a>&lt;/sup>.&lt;/p>
+&lt;p>The problem is that, we are often not prepared for these pandemics. For instance, during the Ebola pandemic in West Africa, 11,000 died simply because the responsible bureaucrats could not mobilize enough resources in time.&lt;/p>
+&lt;h2 id="pandemic-bonds-and-how-they-work">Pandemic Bonds and how they work &lt;a href="#pandemic-bonds-and-how-they-work" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>There was an idea from the World Health Organization (WHO) to use create a kind of insurance market they call a Pandemic bond.&lt;sup id="fnref:7">&lt;a href="#fn:7" class="footnote-ref" role="doc-noteref">7&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>How it would work is that,&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>First&lt;/strong>, a pool of money (equivalent to whats needed to finance an Ebola pandemic) would be put up by speculators.&lt;/li>
+&lt;li>&lt;strong>Second&lt;/strong>, The WHO would then continuously pay the speculators a kind of insurance premium. But if a new Ebola out break occurred in a new country, the WHO would use the pool of money (put up by the speculators) to facilitate the mitigation of Ebola in that region. This is obviously an over simplification of the 300 plus page document that explains how these pandemic bonds actually work&lt;sup id="fnref:8">&lt;a href="#fn:8" class="footnote-ref" role="doc-noteref">8&lt;/a>&lt;/sup> but I hope you get the idea? Its basically health insurance for everyone subsidized by the WHO.&lt;/li>
+&lt;/ul>
+&lt;h2 id="trust-minimized--pandemic-bonds">Trust minimized pandemic bonds &lt;a href="#trust-minimized--pandemic-bonds" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The pandemic bonds have however become controversial&lt;sup id="fnref:9">&lt;a href="#fn:9" class="footnote-ref" role="doc-noteref">9&lt;/a>&lt;/sup> probably due to their poor mechanism design&lt;sup id="fnref:10">&lt;a href="#fn:10" class="footnote-ref" role="doc-noteref">10&lt;/a>&lt;/sup>. Despite this fact, I think mechanism designers can come up with better mechanisms resembling these &amp;ldquo;pandemic bonds&amp;rdquo; that actually work in a society.&lt;/p>
+&lt;p>The great thing about Smart-contracts like Solidity&lt;sup id="fnref:11">&lt;a href="#fn:11" class="footnote-ref" role="doc-noteref">11&lt;/a>&lt;/sup>, Scilla&lt;sup id="fnref:12">&lt;a href="#fn:12" class="footnote-ref" role="doc-noteref">12&lt;/a>&lt;/sup> &amp;amp; Simplicity&lt;sup id="fnref:13">&lt;a href="#fn:13" class="footnote-ref" role="doc-noteref">13&lt;/a>&lt;/sup> is that, they allow us to design trust minimized financial instruments, thus incorporating a strain of these pandemic bonds into what is now popularly defined as DeFI or decentralized finance&lt;sup id="fnref:14">&lt;a href="#fn:14" class="footnote-ref" role="doc-noteref">14&lt;/a>&lt;/sup>.&lt;/p>
+&lt;p>We can have several of these DeFi (Decentralized Finance) powered applications to mitigate several problems around disease.&lt;/p>
+&lt;ul>
+&lt;li>For instance, Animal husbandry businesses can pay these premiums to mitigate risks around animal disease pandemics like bird flu or mad cow disease.&lt;/li>
+&lt;li>Charities or Governments can pay these premiums to to secure resources for fighting pandemic out breaks like the recent Corona virus. The recent Corona virus for example is so new, there exists no cure&lt;sup id="fnref:15">&lt;a href="#fn:15" class="footnote-ref" role="doc-noteref">15&lt;/a>&lt;/sup>. In such a case, the pool speculators put up would be used for research towards the creation of a vaccine.&lt;/li>
+&lt;/ul>
+&lt;h2 id="event-derivatives">Event Derivatives &lt;a href="#event-derivatives" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Another way of using DeFi to mitigate disease pandemics is by leveraging prediction markets like Augur&lt;sup id="fnref:16">&lt;a href="#fn:16" class="footnote-ref" role="doc-noteref">16&lt;/a>&lt;/sup> &amp;amp; Gnosis&lt;sup id="fnref:17">&lt;a href="#fn:17" class="footnote-ref" role="doc-noteref">17&lt;/a>&lt;/sup> to create an &amp;ldquo;event derivative&amp;rdquo; that may assist in the mitigation of a disease.
+Event derivatives are markets that pay people for accurately predicting events in the future&lt;sup id="fnref:18">&lt;a href="#fn:18" class="footnote-ref" role="doc-noteref">18&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>An example event derivative is a market we can call, &amp;ldquo;Will it rain on Thursday, next week?&amp;rdquo;. Before Thursday next week, people can bet &amp;ldquo;YES&amp;rdquo; or &amp;ldquo;NO&amp;rdquo; on if it will really rain on that day.
+If it rains, people who bet &amp;ldquo;YES&amp;rdquo; win the bet &amp;amp; people who voted &amp;ldquo;NO&amp;rdquo; have their money transferred to people that bet &amp;ldquo;YES&amp;rdquo;.&lt;/p>
+&lt;p>Coming back to disease pandemics, we can have a question like &amp;ldquo;Will there be a vaccine for Corona viral infections?&amp;rdquo;. In theory, this &amp;ldquo;event derivative&amp;rdquo; should incentivize the release of information that may lead to the creation of an Corona viral infection.&lt;/p>
+&lt;p>The market can also be subsidized by an entity through increasing the stakes to be won if incase the market outcome ins &amp;ldquo;YES&amp;rdquo;.&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>Here is the &lt;a href="https://www.youtube.com/watch?v=9AEMKudv5p0">video&lt;/a> from VOX media.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>America&amp;rsquo;s centre for disease control says this is the &lt;a href="https://www.cdc.gov/flu/pandemic-resources/1918-pandemic-h1n1.html">worsted pandemic in recent history&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
+&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Black_Death">Black Death&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:4">
+&lt;p>&lt;a href="https://www.cdc.gov/vhf/ebola/index.html">Resources on Ebola by the CDC&lt;/a>&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:5">
+&lt;p>&lt;a href="https://www.cdc.gov/sars/index.html">Resources on SARS by the CDC&lt;/a>&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:6">
+&lt;p>&lt;a href="https://www.cdc.gov/coronavirus/index.html">Resources on the Corona Virus by the CDC&lt;/a>&amp;#160;&lt;a href="#fnref:6" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:7">
+&lt;p>A great article from the Economist is, &lt;a href="https://www.economist.com/finance-and-economics/2017/07/27/pandemic-bonds-a-new-idea">Pandemic bonds, a new idea&lt;/a>. There is also one a &lt;a href="https://www.worldbank.org/en/news/press-release/2017/06/28/world-bank-launches-first-ever-pandemic-bonds-to-support-500-million-pandemic-emergency-financing-facility">press release from world bank&lt;/a>&amp;#160;&lt;a href="#fnref:7" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:8">
+&lt;p>Here is the full &lt;a href="http://pubdocs.worldbank.org/en/882831509568634367/PEF-Final-Prospectus-PEF.pdf">PDF of the Pandemic bond prospectus&lt;/a>. You can also find more related documentation &lt;a href="https://www.worldbank.org/en/topic/pandemics/brief/pandemic-emergency-financing-facility">here&lt;/a>.&amp;#160;&lt;a href="#fnref:8" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:9">
+&lt;p>&lt;a href="https://www.bloomberg.com/news/articles/2019-08-14/ebola-bond-pays-investors-millions-while-congo-battles-outbreak">Investors Cash In on Ebola Bonds That Haven&amp;rsquo;t Paid Out&lt;/a>&amp;#160;&lt;a href="#fnref:9" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:10">
+&lt;p>&lt;a href="https://www.nature.com/articles/d41586-019-02415-9">Pandemic bonds: designed to fail in Ebola&lt;/a>&amp;#160;&lt;a href="#fnref:10" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:11">
+&lt;p>&lt;a href="https://en.wikipedia.org/wiki/Solidity">Solidity &lt;/a> is the most popular smart contracting language but has &lt;a href="https://news.ycombinator.com/item?id=14691212">several limitations&lt;/a>&amp;#160;&lt;a href="#fnref:11" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:12">
+&lt;p>&lt;a href="https://scilla-lang.org/">Scilla &lt;/a> is designed to overcome the short comings of solidity.&amp;#160;&lt;a href="#fnref:12" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:13">
+&lt;p>&lt;a href="https://arxiv.org/abs/1711.03028">Simplicity &lt;/a> aims to improve smart-contracts on Bitcoin, it is however still under heavy development.&amp;#160;&lt;a href="#fnref:13" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:14">
+&lt;p>&amp;ldquo;&lt;a href="https://www.ft.com/content/16db565a-25a1-11ea-9305-4234e74b0ef3">‘DeFi’ movement promises high interest but high risk&lt;/a>&amp;rdquo;, is a great article from financial times to get familiarity with DeFi.&amp;#160;&lt;a href="#fnref:14" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:15">
+&lt;p>&lt;a href="https://www.bbc.com/news/health-51299735">Corona Virus: Scientists race to develop a vaccine&lt;/a>&amp;#160;&lt;a href="#fnref:15" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:16">
+&lt;p>You can checkout the &lt;a href="https://augur.casino">Augur&lt;/a> event derivatives or prediction markets.&amp;#160;&lt;a href="#fnref:16" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:17">
+&lt;p>Another market for making event derivatives is &lt;a href="https://gnosis.io/">Gnosis&lt;/a>&amp;#160;&lt;a href="#fnref:17" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:18">
+&lt;p>&lt;a href="http://www.marketswiki.com/wiki/Event_derivatives">A more comprehensive definition of event derivatives&lt;/a> can be found on the Markets Wiki&amp;#160;&lt;a href="#fnref:18" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description><author>hi@asindu.xyz (Asindu Drileba)</author><guid>https://asindu.xyz/posts/pandemics-bonds/</guid><pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate></item><item><title>Proof of work on layer two</title><link>https://asindu.xyz/posts/proof-of-work-on-layer-two/</link><description>&lt;p>Ever since Ethereum launched, they have had proof of stake on their road map. The main decision often cited from this transition is the claim that Bitcoin’s proof of work is a “waste of electricity”.
+Even the &lt;a href="https://www.youtube.com/watch?v=uTxRF5ag27A">creator of C++ complained about it&lt;/a>. But now I am talking about why we may need proof of work on layer 2 yet everyone is trying to get rid of it from layer 1 (the networking layer at which &lt;a href="https://www.investopedia.com/terms/c/consensus-mechanism-cryptocurrency.asp">consensus&lt;/a> is made). Why?
+First, before we think of substitutes to proof of work, we need to acknowledge the role of proof of work in a system like bitcoin.&lt;/p>
+&lt;p>Emin Gün Sirer has a nice &lt;a href="https://twitter.com/el33th4xor/status/1006931729679044608?lang=en">micro lecture&lt;/a> explaining what proof of work is.
+The conclusion is that proof of work is a &lt;a href="https://en.wikipedia.org/wiki/Sybil_attack">sybil resistance&lt;/a> mechanism. Infact, it was invented exactly for that &lt;a href="https://en.wikipedia.org/wiki/Hashcash">back in 1990’s&lt;/a> for Usenet.&lt;/p>
+&lt;p>Basically, it’s makes creating a block expensive so as to limit how many blocks can be created with in a fixed time period.
+So if we are to substitute proof of work, then it’s substitute needs to be capable of Sybil resistance or better.&lt;/p>
+&lt;h2 id="sybil-attacks-beyond-layer-i">Sybil attacks beyond layer I &lt;a href="#sybil-attacks-beyond-layer-i" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Proof of Stake is capable of mitigating sybil&amp;rsquo;s on layer one however, the concerns of Sybil attacks a stretch beyond layer one. For instance, let’s say I have a layer 2 based messaging app. How do you stop infinite streams of messages from spammers?
+You have several options ;&lt;/p>
+&lt;ul>
+&lt;li>First you can use the &lt;a href="https://www.inc.com/sonya-mann/earn-com-21-co-cryptocurrency-email.html">earn.com&lt;/a> model where you require every sender to pay a fee to the recipient.
+Great! but this doesn’t scale properly. Imagine a Reddit forum where you had to pay $2 every-time you want to post a comment. Even if you can afford it, many people will not &amp;amp; you will be the only one in your forum.&lt;/li>
+&lt;li>Another option is now to use proof of work. For instance, before you are allowed to send a message or post on forum, You have to do a small proof of work before you post. You can adjust the difficulty of the pow based on the rate at which someone is posting.&lt;/li>
+&lt;/ul>
+&lt;p>Proof of work can also be used to establish decentralized identity for reputation systems in a way similar to &lt;a href="https://en.bitcoin.it/wiki/Fidelity_bonds">fidelity bonds&lt;/a>.
+They work (fidelity bonds) by someone provably destroying bitcoins, to establish identity. The idea is that destroying bitcoins is expensive, so it’s less likely that the identity is duplicate, as duplicate identities are be expensive to make. Proof of work can also be as expensive as provably burning bitcoins. So instead of destroying bitcoins we can just set a pow difficulty &amp;amp; give agents what ever reputation tokens they deserve as long as they solve a given proof of work puzzle.&lt;/p></description><author>hi@asindu.xyz (Asindu Drileba)</author><guid>https://asindu.xyz/posts/proof-of-work-on-layer-two/</guid><pubDate>Sat, 16 Nov 2019 00:00:00 +0000</pubDate></item><item><title>Why bockchains are not mainstream</title><link>https://asindu.xyz/posts/why-bockchains-are-not-mainstream/</link><description>&lt;h2 id="the-current-state">The current state &lt;a href="#the-current-state" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>There is a lot of hype about what the global distributed ledger aka &amp;ldquo;Blockchain&amp;rdquo; can do for society.
+A &amp;ldquo;trust machine&amp;rdquo; as some people call it, that will bring the power of finance, data sovereignty and inclusion to the people,
+hence rendering centralized intermediaries like Visa, Barclays &amp;amp; Facebook obsolete.&lt;/p>
+&lt;p>We shall achieve this by using a combination of robust, battle tested cryptography &amp;amp; game theory.&lt;/p>
+&lt;p>While this vision is plausible, realising it is not a easy as it may seem.&lt;/p>
+&lt;p>The blockchain is not yet ready.&lt;/p>
+&lt;h2 id="the-core-barriers-to-main-stream-adoption">The core barriers to main stream adoption &lt;a href="#the-core-barriers-to-main-stream-adoption" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>The blockchain, while being a new concept in decentralized distributed databases has also presented a very unique set of problems in computer science &amp;amp; economics that have never been solved at the time of this writing.&lt;/p>
+&lt;p>Is this post, I will talk about the the 6 most important issues only with which if solved, shall we (blockchain enthusiasts) ever achieve our vision.&lt;/p>
+&lt;h3 id="1-scalability-issues">1. Scalability Issues &lt;a href="#1-scalability-issues" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>The current bandwidth, i.e the data that can be transmitted through a blockchain with in a given time is simply too bounded for main stream adoption.&lt;/p>
+&lt;p>Ethereum for instance does a maximum of 13 transactions per second. Visa on the other hand can do 24,000 Transaction per second and peak over 40,000 transactions per second.&lt;/p>
+&lt;p>So as you can see, the blockchain is thousands of magnitudes unable to manage a global traffic of financial transactions.
+This is what they call the &amp;ldquo;Scalability Problem&amp;rdquo;&lt;/p>
+&lt;p>Coming up with a solution to scalability the problems without tarnishing the original value propositions of a blockchain (immutability/security, decentralization &amp;amp; censorship resistance) is not trivial. It has been nick named the &lt;a href="https://github.com/ethereum/wiki/wiki/Sharding-FAQ#this-sounds-like-theres-some-kind-of-scalability-trilemma-at-play-what-is-this-trilemma-and-can-we-break-through-it">&amp;ldquo;scalability trilemma&amp;rdquo;&lt;/a> by Vitalik Buterine (Ethereum&amp;rsquo;s co-author).&lt;/p>
+&lt;h3 id="2-lack-of-intuitive-private-key-management">2. Lack of Intuitive Private Key Management &lt;a href="#2-lack-of-intuitive-private-key-management" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>Ordinary users will simply never wrap their heads around private keys.&lt;/p>
+&lt;p>Private keys, which are a string of text used to sign transactions and make other proofs(cryptographic).&lt;/p>
+&lt;p>The purpose for these proofs or signatures is for other entities on a blockchain network to verify identities &amp;amp; messages amongst themselves without reasonable doubt.&lt;/p>
+&lt;p>Private keys have two main problems first, how to store them securely.
+Anyone who can memorize, take a picture, or copy your private key can literally steal all your money.
+Because they have your private key, they can make the cryptographic proofs/signatures and &lt;em>accurately prove to everyone on the network they are you&lt;/em> even without your consent. Even when they are not you.&lt;/p>
+&lt;p>Second, you loose your key you loose access to all your money &amp;amp; &lt;em>no one can ever help you out&lt;/em>.
+There is no &amp;ldquo;click here to remember your private key&amp;rdquo;&lt;/p>
+&lt;p>We need to first come up with something as intuitive using ATM/Debit cards.&lt;/p>
+&lt;p>Imagine if your bank told you that, &amp;ldquo;if you forgot your Debit card PIN, you loose access to all your money with &lt;em>zero hope of recovering it how ever large a sum of money it would be&lt;/em>&amp;rdquo;.&lt;/p>
+&lt;p>If the above was the case, I don&amp;rsquo;t think any one would use debit cards.&lt;/p>
+&lt;h3 id="3-contract-security">3. Contract security &lt;a href="#3-contract-security" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>It is simply not reliable &amp;amp; safe for responsible institutions &amp;amp; individuals to deploy smart contracts on blockchains like Ethereum.&lt;/p>
+&lt;p>Due to the blockchain having an immutable and unpredictable state, Smart contracts deployed on such a platform are also expected to suffer from immutable bugs &amp;amp; unpredictable events.&lt;/p>
+&lt;p>As a result, millions of dollars have been lost in events such as the &lt;a href="https://www.bloomberg.com/features/2017-the-ether-thief/">theft of $50 million from TheDAO&lt;/a> and &lt;a href="https://www.coindesk.com/startup-lost-160-million-still-wants-shake-ethereum/"> Parity&amp;rsquo;s $160 Million loss of funds&lt;/a>&lt;/p>
+&lt;p>I was glad that Rick dudley &lt;a href="https://youtu.be/1AGHAuWz_4U?t=986">talked about this&lt;/a>&lt;/p>
+&lt;h3 id="4-consensus-algorithms-are-wack">4. Consensus algorithms are wack &lt;a href="#4-consensus-algorithms-are-wack" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>The popular blockchains only don&amp;rsquo;t offer transaction finality i.e you will never be 100% sure that you have gotten funds.&lt;/p>
+&lt;p>You can only be &lt;a href="https://ethereum.stackexchange.com/questions/319/what-number-of-confirmations-is-considered-secure-in-ethereum">probabilistically to a high degree&lt;/a> (but with zero guarantee) that you have received your funds.
+This is because in major consensus algorithm called Nakamoto Consensus, the miners elect the chain with the most computational work that are with in the same protocol i.e consensus rules.&lt;/p>
+&lt;p>For instance imagine your bank tells you that you that, &amp;ldquo;there is a 95% chance that we &lt;em>might&lt;/em> have your life savings, however you may also not poses it in 5 years in case we discovered that the chain with the most work does not have your transaction in it&amp;rdquo;&lt;/p>
+&lt;p>Yes, I don&amp;rsquo;t think anyone wants to keep their life savings in such a bank.&lt;/p>
+&lt;h3 id="5-privacy">5. Privacy &lt;a href="#5-privacy" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>Just by knowing someone&amp;rsquo;s cryptocurrency address, you can know their account balance &amp;amp; transaction history simply by pasting it in a blockchain explorer like &lt;a href="https://blockchain.info">blockchain&lt;/a> and &lt;a href="https://etherscan.io">etherscan&lt;/a>&lt;/p>
+&lt;p>Meaning it&amp;rsquo;s very easy for anyone to keep track of your financial activities without permission.&lt;/p>
+&lt;p>You buy HIV drugs? I now know your HIV positive, Your paying schools fees? now your local kidnapper knows where your kids study.&lt;/p>
+&lt;p>Buying birth control pills? Now anyone in the world may accurately guess that your a woman.
+No careful person wants that!&lt;/p>
+&lt;h3 id="6-price-volatility">6. Price volatility &lt;a href="#6-price-volatility" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>Very few people simply don&amp;rsquo;t have the stomach to hold a financial instrument that drops by over 50% with in &lt;a href="https://www.cnbc.com/2017/12/26/bitcoin-price-in-2018-could-hit-60000-but-another-crash-is-coming.html">a few months&lt;/a>.&lt;/p>
+&lt;h2 id="what-can-we-do">What can we do? &lt;a href="#what-can-we-do" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Most projects are building on platforms that have these problems regardless, in hopes that they will integrate solutions to the respective issues in the future.&lt;/p>
+&lt;p>The risk they face however, is that the platform they built on, my become obsolete after a heavy investment of time &amp;amp; resources on the wrong platform.&lt;/p>
+&lt;p>Think how the &lt;a href="https://bitcoinmagazine.com/articles/bitcoin-now-useless-micropayments-solutions-are-coming1/">micro payments industry died in bitcoin because of high fees&lt;/a>&lt;/p>
+&lt;p>It&amp;rsquo;s like building your phone app around a windows smart-phone only to be made irrelevant because the next generation of mobile users will not be using windows smart-phones, but iOS and Android.&lt;/p></description><author>hi@asindu.xyz (Asindu Drileba)</author><guid>https://asindu.xyz/posts/why-bockchains-are-not-mainstream/</guid><pubDate>Tue, 15 May 2018 00:00:00 +0000</pubDate></item></channel></rss>

@@ -29,6 +29,10 @@ main {
 	margin: auto;
 }
 
+::placeholder {
+padding-left: 10px;
+}
+
 a, body {
 	color: #ECDBBA;
 }
@@ -174,3 +178,5 @@ table th, table td {
 a.footnote-ref {
 	color: #C84B31;
 }
+
+

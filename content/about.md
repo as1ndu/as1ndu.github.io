@@ -5,5 +5,5 @@ url: "/about/"
 noComment: true
 ---
 
-hello :)
+email: hi@asdindu.xyz
 

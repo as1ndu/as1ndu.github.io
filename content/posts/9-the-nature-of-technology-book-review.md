@@ -9,7 +9,6 @@ slug : "the-nature-of-technology-book-review"
 draft : false
 tags : ["complex-systems", "book-review", "education"]
 date : "2024-03-05"
-hidden: true
 ---
 
 Last year I read a book titled **"The Nature of Technology"** by one W. Brian Arthur. After finishing it, it was one of those books that I wish everyone read. Especially if you're interested in technology, technological progress, the notion wealth creation or economic growth. [^1]

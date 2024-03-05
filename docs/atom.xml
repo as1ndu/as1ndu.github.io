@@ -1,4 +1,135 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Asindu's Journal</title><description>A public journal about thoughts going through Asindu's head.</description><link>https://asindu.xyz</link><language>en</language><copyright>Copyright 2023, Asindu Drileba</copyright><lastBuildDate>Sat, 08 Oct 2022 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="http://asindu.xyz/atom.xml" rel="self" type="application/atom+xml"/><item><title>Random walk in 2 lines of J</title><link>https://asindu.xyz/posts/random-walk-in-2-lines-of-j/</link><description>&lt;p>Of all the many programming languages, none has quite caught my attention like the &amp;ldquo;Iversonian&amp;rdquo;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Asindu's Journal</title><description>A public journal about thoughts going through Asindu's head.</description><link>https://asindu.xyz</link><language>en</language><copyright>Copyright 2024, Asindu Drileba</copyright><lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="http://asindu.xyz/atom.xml" rel="self" type="application/atom+xml"/><item><title>The Nature of Technology Book Review</title><link>https://asindu.xyz/posts/the-nature-of-technology-book-review/</link><description>&lt;p>Last year I read a book titled &lt;strong>&amp;ldquo;The Nature of Technology&amp;rdquo;&lt;/strong> by one W. Brian Arthur. After finishing it, it was one of those books that I wish everyone read. Especially if you&amp;rsquo;re interested in technology, technological progress, the notion wealth creation or economic growth. &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>Brian Arthur is one of those &lt;strong>&amp;ldquo;complexity theorists&amp;rdquo;&lt;/strong>, that is, people that study the relationship between groups &amp;amp; the individual components that make them up.&lt;/p>
+&lt;p>An example is a stock market, you cannot trade stocks by yourself, you need to be in a group to trade stocks with each other.&lt;/p>
+&lt;p>The stock market can be looked at as a lumpy, single or independent system even when it is made up of many agents and the properties of the lumpy stock market may be very different from the properties of an individual agent in the market. Complexity theorists call this a Complex System. &lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>For people that are not aware of such a definition of complex systems, studying literature of these complexity theorists may just look like inter-disciplinary science.&lt;/p>
+&lt;p>Brian Arthur in this book, brings about the mind set of thinking about technologies as a complex system (smaller components interacting to form larger groups) and uses it to provide some insights about technology that may be easy to understand but not blatantly obvious.&lt;/p>
+&lt;p>I say this book is a must read because it provides insights into some action points incase you want to achieve some things — somethings that I think everyone might say are good to achieve.&lt;/p>
+&lt;hr>
+&lt;h2 id="so-why-should-you-read-the-nature-of-technology">So, why should you read &amp;ldquo;The Nature of Technology&amp;rdquo;? &lt;a href="#so-why-should-you-read-the-nature-of-technology" class="hash">#&lt;/a>&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>If you want a blueprint for generating tech start-up ideas or come up with inventions that people will find useful the book is for you.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>I often see discussions on social media, amongst friends, politicians on TV, on how cities, countries can become technologically competitive with other regions. One question for example is usually how can we have something like silicon valley in Africa, in Europe etc. Basically other communities wanting to replicate technological success equivalent to that in silicon valley (or just the West) in their own communities. If you want to know how this book is for you. (Hint: the answer isn&amp;rsquo;t more homework time for children).&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>A childhood friend of mine and me used to talk about inventors. A lot of people&amp;rsquo;s answers to this question is something like &amp;ldquo;things to invent are over&amp;rdquo; or &amp;ldquo;the low hanging fruit is gone&amp;rdquo;. This book describes why there is only more stuff to invent and why with every subsequent invention there is actually more potential for people to invent more items or technologies. That is, there will be more, lower hanging fruit as more technological progress is made and more things to invent. The book properly explains why.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>The aim of this blog post is to write about some of the take aways I got from the book which may address some of the discussions I outlined above.&lt;/p>
+&lt;p>It would be inaccurate to call this a summary the book.
+The book is short (just under 300 pages), but it&amp;rsquo;s very information dense. So dense I think it is not be possible to soak in everything on first reading.&lt;/p>
+&lt;h2 id="take-aways-from-the-book">Take aways from the book. &lt;a href="#take-aways-from-the-book" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Now, for the meat of the article below, are some of the 3 most important take aways I got from reading the book.&lt;/p>
+&lt;h3 id="1-technology-relies-on-phenomena">1. Technology relies on phenomena. &lt;a href="#1-technology-relies-on-phenomena" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>The meaning of phenomena is something an event or pattern that can be observed.&lt;/p>
+&lt;p>An example is the phenomena of electromagnetic waves that were investigated by the likes of Heinrich Hertz, Oliver Lodge and Guglielmo Marconi. Which are the basis of telecommunications TV Signals, Radio Signals, GPS, WiFi — basically all of wireless communication. &lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>Another example is nuclear power that is based on the understanding of phenomena happening inside atoms.&lt;/p>
+&lt;p>So what, this is obvious? you may ask. The important insight isn&amp;rsquo;t that technology relies on phenomena.&lt;/p>
+&lt;p>&lt;strong>It is the fact that the discovery of phenomena is a prerequisite to the creation of new technology.&lt;/strong>&lt;/p>
+&lt;p>Let us first think of some practical implications of the above statement. If you want to have an ecosystem that creates new technology.&lt;/p>
+&lt;p>We have to invest in basic scientific research and by this I mean both &lt;strong>teleological&lt;/strong> &amp;amp; &lt;strong>non-teleological&lt;/strong> research whose purpose is to document, curate and study different phenomena. &lt;sup id="fnref:4">&lt;a href="#fn:4" class="footnote-ref" role="doc-noteref">4&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>&lt;strong>Teleological research&lt;/strong> means investing in research whose use is obviously known. Like looking for the cure of cancer, if a break through in made in this field we know exactly how it will benefit society.&lt;/p>
+&lt;p>What however I think is more important and unfortunately suppressed or discouraged by most institutions is the investment in &lt;strong>non-teleological research&lt;/strong>.
+That is, the investment into research who&amp;rsquo;s use is not clearly outlined.
+An example is the study of flocks of birds, the origins of the universe, the behavior of prime numbers.&lt;/p>
+&lt;p>So why should we invest appropriately in research that isn&amp;rsquo;t obviously useful? I gave you the answer earlier. &lt;strong>phenomena is a prerequisite to technology&lt;/strong>, you need to find the &lt;strong>phenomena first&lt;/strong> before you can find something useful to do with it.&lt;/p>
+&lt;p>It will not be obvious what a particular newly discovered phenomena can be used for. When electricity was discovered for example by the ancient Greeks. It was not exactly obvious that it can be used to make power smartphones and light bulbs.&lt;/p>
+&lt;p>The discovery of so called quantum phenomena for example made it possible to invent the laser &amp;amp; the computer transistor.&lt;/p>
+&lt;p>Also, special properties of some prime numbers for example are used in public key cryptography to secure communication across networks like the internet.&lt;/p>
+&lt;p>We simply cannot invent the cryptography first, and then come up with the mathematical properties/phenomena of the numbers later.&lt;/p>
+&lt;p>So if we want people to find new phenomena that may potentially be used to build new technology we need to;&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;strong>a) Allow students, researchers to peruse topics that are not obviously useful.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>b) If you want to get ideas for new technology to invent. A good way to do so it is to simply study &amp;amp; curate phenomena, in physics, mathematics, biology, economics or psychology e.t.c. And then try to leverage it to do something useful. If you are successful and the first to do so, you probably would have invented new technology.&lt;/strong>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>I will leave you with an excerpt from the book that expands on this point further.&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>&lt;em>The process is not one that can be easily controlled from the top down. There is always a temptation for governments to pursue science with particular commercial aims in view. But this rarely works. Had there been a stated purpose to quantum physics in the 1920s, it would have been deemed a failure. And yet quantum physics has given us the transistor, the laser, the basis of nanotechnology, and much else besides. Building a capacity for advanced technology is not like planning production in a socialist economy, but more like growing a rock garden. Planting, watering, and weeding are more appropriate than five-year plans&lt;/em>&lt;/strong>&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="2-technology-is-combinatorial">2. Technology is combinatorial &lt;a href="#2-technology-is-combinatorial" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>I was listening to the Lex Friedman interview with Jeff Bezos. And he mentioned something that is relevant to this section of the blog post. &lt;sup id="fnref:5">&lt;a href="#fn:5" class="footnote-ref" role="doc-noteref">5&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>Jeff Bezos mentioned in the interview that he identifies with himself as an inventor, what is relevant to the discussion here however is that Jeff Bezos also said that to &amp;ldquo;invent&amp;rdquo; Amazon he used components that were already invented. That is, the logistics infrastructure that was used by Amazon to make deliveries and the online payments processing infrastructure.&lt;/p>
+&lt;p>&lt;strong>These two components were necessary for Jeff Bezos to invent Amazon but he didn&amp;rsquo;t have to invent them. He combined two already existing technologies, online payments processing infrastructure &amp;amp; logistics infrastructure for fulfilling deliveries. This is why I say that technology is &amp;ldquo;combinatorial&amp;rdquo; meaning that it is a combination of other technologies.&lt;/strong>&lt;/p>
+&lt;p>But Amazon isn&amp;rsquo;t only built up of two components i.e prerequisites that it needs to work. It is built up of programming languages, browser technology, networking infrastructure, microprocessors, electricity and many other components.&lt;/p>
+&lt;p>These many other technologies &amp;ldquo;combine&amp;rdquo; to make Amazon possible.&lt;/p>
+&lt;p>Some people suggest that it is more difficult today to invent new technology because all the &amp;ldquo;low hanging fruit is gone&amp;rdquo; or because &amp;ldquo;we are running out of things to invent &amp;ldquo;.&lt;/p>
+&lt;p>The good news is that if we think of technology as being combinatorial. Then it would mean that the number of new technologies to discover will only increase with time i.e with each new discovery.&lt;/p>
+&lt;p>Why? For illustration the fact that technologies are combination of other technologies means that there is no basket from which we are pulling discoveries from.&lt;/p>
+&lt;p>The people that suggest technological progress will slow down assume that there is a finite amount of things to be discovered, and that each new technological discovery brings the bucket is closer to being empty.&lt;/p>
+&lt;p>If we are to think of technologies as a combination of other technologies then we shall conclude the above suggestion may be false.&lt;/p>
+&lt;p>Consider two technologies &lt;code>'A'&lt;/code> and &lt;code>'B'&lt;/code>. If we create a new technology by combining those two we now have a new technology called &lt;code>'AB'&lt;/code>. So in total we have three technologies i.e &lt;code>'A'&lt;/code>, &lt;code>'B'&lt;/code> and &lt;code>'AB'&lt;/code> instead of two.&lt;/p>
+&lt;p>Now we have three technologies to combine instead of two.
+Which gives us &lt;code>'A'&lt;/code>, &lt;code>'B'&lt;/code>, &lt;code>'AB'&lt;/code>, &lt;code>'AAB'&lt;/code>, &lt;code>'BAB'&lt;/code>, and &lt;code>'ABAB'&lt;/code>. The new technologies &amp;lsquo;AAB&amp;rsquo;, &amp;lsquo;BAB&amp;rsquo;, and &amp;lsquo;ABAB&amp;rsquo; are a result of combining &lt;code>'A'&lt;/code>, &lt;code>'B'&lt;/code> and &lt;code>'AB'&lt;/code> together. Now we have six technologies to combine in different ways that will even lead to more technology that can also provide more ways for technology to create new technology. This is the phenomena referred to by Brian Arthur as increasing returns. &lt;sup id="fnref:6">&lt;a href="#fn:6" class="footnote-ref" role="doc-noteref">6&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>&lt;strong>The mathematical abstraction above illustrated that starting with only two technological components, combining them in different ways gives us a larger set of technologies and thus a higher potential to create new technologies not less.&lt;/strong>&lt;/p>
+&lt;p>In reality we can apply this method of thought. Think of the combination of chemicals for example used make lithium ion batteries, these batteries can be used to make other technologies like Electric Cars, Laptops, Smart Watches and autonomous drones.&lt;/p>
+&lt;p>The framework can also be applied in software. Many software developers creating open source libraries for example does not make it less likely for developers to create new software.&lt;/p>
+&lt;p>The available open source libraries can be combined in many ways to create new open source software which will also make it possible to make new combinations of software libraries that will be used to create an even larger set of possible software.&lt;/p>
+&lt;p>So if technological progress actually slows down in the real world the reason should never be that &amp;ldquo;we are running out of ideas&amp;rdquo; or that, &amp;ldquo;the law hanging fruit is gone&amp;rdquo;. The reasons may be more cultural that technical. It is less likely to be less hours spent on home work or lower IQ points of the population.&lt;/p>
+&lt;p>Also, if you are a wannabe inventor, another blueprint for creating ideas is to think of how to combine different technologies and &lt;strong>then later&lt;/strong> think of what this combination can be used for — Instead of first thinking about a solution/problem and then trying to look for the right combination that will solve the problem. &lt;strong>This can be regarded as a form of non-teleological invention. That is, inventing something whose purpose or use u may not know of at first creation.&lt;/strong>&lt;/p>
+&lt;h3 id="3-technology-transmutes">3. Technology transmutes &lt;a href="#3-technology-transmutes" class="hash">#&lt;/a>&lt;/h3>
+&lt;p>My last take away from this book is that &amp;ldquo;Technology transmutes&amp;rdquo; and to transmute means &amp;ldquo;to change form&amp;rdquo;.&lt;/p>
+&lt;p>Brian Arthur defines technology as a set of techniques or devices used to satisfy a human need.&lt;/p>
+&lt;p>So to him things like postal services, Yellow Page telephone directories, accounting techniques, drafting of building designs and writing are all forms of technologies.&lt;/p>
+&lt;p>The following technologies listed above however don&amp;rsquo;t remain as they are. When new technological break troughs that are otherwise unrelated are made. They often encounter these existing technologies.&lt;/p>
+&lt;p>This encounter then fosters a transmutation i.e the recent break troughs from otherwise unrelated fields interact with previous/old/existing technologies to create something that is related both but also different.&lt;/p>
+&lt;p>A clear example of this may be the postal service. Computer technology was initially developed for its number crunching abilities — very little todo with communication, but combined with networking and suitable user interfaces. It encountered the concept of a postal service and transmuted/transformed it into a new sub industry of electronic mail (e-mail services like Gmail).&lt;/p>
+&lt;p>We see this with the writing of books or documents on pen/pencil &amp;amp; paper being transmuted into the use of word processors like Scrivener or Microsoft Word. Writing in a computer&amp;rsquo;s word processor software is very different from writing on a piece of paper with a pen. Papers do not require keyboards, nor do pens require electricity. The two new paradigms of technology are not obviously related.
+Computer technology &amp;amp; software encountered the act of writing and transmuted it from writing on paper with a pen to using a keyboard on computer software. Although the activity is still writing i.e the output of text, by a human using a set of devices.&lt;/p>
+&lt;p>Yahoo Web Directory trying to mimic Yellow Pages business directory.&lt;/p>
+&lt;p>Accounting/book keeping transmuting into spreadsheet programs like Microsoft Excel or software like Quick Books.&lt;/p>
+&lt;p>The drafting of building designs on pencil &amp;amp; paper transmuting into something like ArchiCad.&lt;/p>
+&lt;p>Televisions programs transmuting into something like YouTube.&lt;/p>
+&lt;p>And Radio stations transmuting into something like Podcasts.&lt;/p>
+&lt;p>So what is a good action point for a wannabe inventor, venture capitalist, or school that wants to foster creation of new technology?&lt;/p>
+&lt;p>We need to develop consilience amongst professionals, students and researchers.&lt;/p>
+&lt;p>Consilience is the exploration of several disciplines (especially those that are not directly related) and then using the insights from multiple disciplines to think in terms of analogies.&lt;/p>
+&lt;p>An example of the role of consilience is in the development of ArchiCad. ArchiCad is a software program used by Architects for drafting building designs. So you might think that it was developed by Architects right? No.&lt;/p>
+&lt;p>Architects did not invent ArchiCad because they are too busy being top tier architects.&lt;/p>
+&lt;p>ArchiCad was created by one, Gábor Bojár a Physicist by training and Jonathan Ingram, a Civil Engineer and computer science PhD.&lt;/p>
+&lt;p>Anyways here is the concern. &lt;strong>Architects are not updated enough in what&amp;rsquo;s happening in the field of computing/programming to know what programs can be built to be useful — and computer scientists/programmers don&amp;rsquo;t know much about Architecture for them to make programs that will be comprehensively useful to Architects&lt;/strong>&lt;/p>
+&lt;p>This dilemma of requiring &amp;ldquo;off-topic&amp;rdquo; knowledge in order to create a new form of technology is something that is recurrent.&lt;/p>
+&lt;p>You cannot design software for music producers, like FL Studio, Logic Pro or Cubase. If you have neither produced music nor worked around producers.&lt;/p>
+&lt;p>You cannot come up with an MRI scanner for detecting cancer tumors like Raymond Damadian did&lt;sup id="fnref:7">&lt;a href="#fn:7" class="footnote-ref" role="doc-noteref">7&lt;/a>&lt;/sup>. If you do not know about the basic composition of a cancer tumor. It will not matter how fantastic an electric engineer you are if you don&amp;rsquo;t have this &amp;ldquo;off-topic&amp;rdquo; knowledge in the realm of medicine that describes the basic properties of a tumor in a human body.&lt;/p>
+&lt;p>If you want an extra blueprint, in your tool box of ways to come up with new technologies, it would be that you should look into what other people are doing in other professions, or activities that are not obviously relate to each other and this will give you a larger possible set of activities that you can &lt;strong>transmute&lt;/strong>.&lt;/p>
+&lt;p>I believe this action point of developing consilience, reveals some of the short comings of specialization and vindicates the value of hobbies/exploration/pondering outside our fields of scholarship, research and professions.&lt;/p>
+&lt;p>An interview I recommend related to this topic is one given by David Eliot Shaw, I have linked a video to the exact time stamp where he proposes this &amp;ldquo;right brain thinking&amp;rdquo; and &amp;ldquo;thinking in analogies&amp;rdquo; as advice to young and upcoming scientists &lt;sup id="fnref:8">&lt;a href="#fn:8" class="footnote-ref" role="doc-noteref">8&lt;/a>&lt;/sup>.&lt;/p>
+&lt;p>Like I said this should &lt;strong>not&lt;/strong> be regarded as a summary of the book it is more of a review and a few take aways. If you like technology you are very likely to enjoy the book and I suggest you read it.&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>&lt;a href="https://www.amazon.com/Nature-Technology-What-How-Evolves/dp/1416544062">Here is a link to the book&lt;/a>. The full title is, &amp;ldquo;The Nature of Technology: What It Is and How It Evolves&amp;rdquo; by W. Brian Arthur&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>The &lt;a href="https://en.wikipedia.org/wiki/Complex_system">Wikipedia page on complex systems&lt;/a> is really good. I suggest you have a look at it. You may want to look at the &lt;a href="https://en.wikipedia.org/wiki/El_Farol_Bar_problem">El-farol bar problem&lt;/a> also devised by Brian Arthur if your interested in this complex systems view of the stock market.&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:3">
+&lt;p>Great BBC documentary on electricity. &lt;a href="https://www.youtube.com/watch?v=Gtp51eZkwoI&amp;amp;t=7010s">Linked is a time stamp to the section that covers electro magnetic waves&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:4">
+&lt;p>In the book Anti-fragile by Nassim Taleb, he writes extensively about this in a section titled &amp;ldquo;Non-teleological Tinkering&amp;rdquo;&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:5">
+&lt;p>Link to &lt;a href="https://www.youtube.com/watch?v=DcWqzZ3I2cY">Lex Fridman episode with Jeff Bezos&lt;/a>&amp;#160;&lt;a href="#fnref:5" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:6">
+&lt;p>&lt;a href="https://hbr.org/1996/07/increasing-returns-and-the-new-world-of-business">Increasing Returns and the New World of Business&lt;/a>&amp;#160;&lt;a href="#fnref:6" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:7">
+&lt;p>Wikipedia page for the &lt;a href="https://en.wikipedia.org/wiki/Raymond_Damadian">Inventor of MRI scanner&lt;/a>&amp;#160;&lt;a href="#fnref:7" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:8">
+&lt;p>Here is a YouTube link to the &lt;a href="https://www.youtube.com/watch?app=desktop&amp;amp;v=GdlO8MwLGy0&amp;amp;t=139s">David Elliot Shaw Interview&lt;/a>&amp;#160;&lt;a href="#fnref:8" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description><author>hi@asindu.xyz (Asindu Drileba)</author><guid>https://asindu.xyz/posts/the-nature-of-technology-book-review/</guid><pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate></item><item><title>Random walk in 2 lines of J</title><link>https://asindu.xyz/posts/random-walk-in-2-lines-of-j/</link><description>&lt;p>Of all the many programming languages, none has quite caught my attention like the &amp;ldquo;Iversonian&amp;rdquo;
 programming languages, that is, languages like &lt;a href="https://tryapl.org/">APL&lt;/a>, &lt;a href="https://estradajke.github.io/k9-simples/k9/index.html">Shakti&lt;/a>, &lt;a href="https://pkg.go.dev/robpike.io/ivy">Ivy&lt;/a>, &lt;a href="https://mlochbaum.github.io/BQN/">BQN&lt;/a> and &lt;a href="http://www.jsoftware.com/">J&lt;/a> - the subject of this blog post.&lt;/p>
 &lt;p>One misconception is that languages like J are in the same caliber as &lt;a href="https://en.wikipedia.org/wiki/Brainfuck">Brain F**k&lt;/a> and other &lt;a href="https://esolangs.org/wiki/Main_Page">esoteric&lt;/a> or &lt;a href="https://github.com/topics/golfing-language">golfing&lt;/a> languages which are mostly for recreational programming.
 Languages like J however were designed to be a replacement to traditional maths notation - an interface for thinking or a &lt;a href="https://www.jsoftware.com/papers/tot.htm">tool of thought&lt;/a> as their inventor &lt;a href="https://en.wikipedia.org/wiki/Kenneth_E._Iverson">Kenneth E. Iverson&lt;/a> called them in his Turing Award lecture.&lt;/p>
@@ -49,19 +180,19 @@ plot +/\ (?100#2) { _1 1 NB. Plot synthetic price/ random walk
 &lt;h3 id="adjusting-step-size">Adjusting step size &lt;a href="#adjusting-step-size" class="hash">#&lt;/a>&lt;/h3>
 &lt;p>&lt;code>100&lt;/code> denotes the number of steps the random walk takes. The more the steps the closer to actual stock prices the plot will look like.&lt;/p>
 &lt;h4 id="random-walk-of-100-steps">Random Walk of 100 steps &lt;a href="#random-walk-of-100-steps" class="hash">#&lt;/a>&lt;/h4>
-&lt;p>&lt;img src="http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/100.png" alt="Random Walk of 100 steps" loading="lazy" />
+&lt;p>&lt;img src="https://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/100.png" alt="Random Walk of 100 steps" loading="lazy" />
 &lt;/p>
 &lt;h4 id="random-walk-of-200-steps">Random Walk of 200 steps &lt;a href="#random-walk-of-200-steps" class="hash">#&lt;/a>&lt;/h4>
-&lt;p>&lt;img src="http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/200.png" alt="Random Walk of 200 steps" loading="lazy" />
+&lt;p>&lt;img src="https://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/200.png" alt="Random Walk of 200 steps" loading="lazy" />
 &lt;/p>
 &lt;h4 id="random-walk-of-500-steps">Random Walk of 500 steps &lt;a href="#random-walk-of-500-steps" class="hash">#&lt;/a>&lt;/h4>
-&lt;p>&lt;img src="http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/500.png" alt="Random Walk of 500 steps" loading="lazy" />
+&lt;p>&lt;img src="https://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/500.png" alt="Random Walk of 500 steps" loading="lazy" />
 &lt;/p>
 &lt;h4 id="random-walk-of-1000-steps">Random Walk of 1,000 steps &lt;a href="#random-walk-of-1000-steps" class="hash">#&lt;/a>&lt;/h4>
-&lt;p>&lt;img src="http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/1000.png" alt="Random Walk of 1,000 steps" loading="lazy" />
+&lt;p>&lt;img src="https://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/1000.png" alt="Random Walk of 1,000 steps" loading="lazy" />
 &lt;/p>
 &lt;h4 id="random-walk-of-10000-steps">Random Walk of 10,000 steps &lt;a href="#random-walk-of-10000-steps" class="hash">#&lt;/a>&lt;/h4>
-&lt;p>&lt;img src="http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/10000.png" alt="Random Walk of 10,000 steps" loading="lazy" />
+&lt;p>&lt;img src="https://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/10000.png" alt="Random Walk of 10,000 steps" loading="lazy" />
 &lt;/p></description><author>hi@asindu.xyz (Asindu Drileba)</author><guid>https://asindu.xyz/posts/random-walk-in-2-lines-of-j/</guid><pubDate>Sat, 08 Oct 2022 00:00:00 +0000</pubDate></item><item><title>The Wisdom of rationals</title><link>https://asindu.xyz/posts/the-wisdom-of-rationals/</link><description>&lt;p>For years now I have been fascinated by prediction markets. The source of excitement is the idea is that you can use financial markets to do &lt;a href="https://en.wikipedia.org/wiki/Inference">inference&lt;/a> — just like machine learning.&lt;/p>
 &lt;p>A famous example of such prediction markets are the orange futures. The orange futures market is one that allows entities
 to buy oranges in advance.

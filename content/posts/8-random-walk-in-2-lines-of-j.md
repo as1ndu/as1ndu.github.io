@@ -84,16 +84,16 @@ plot +/\ (?100#2) { _1 1 NB. Plot synthetic price/ random walk
 `100` denotes the number of steps the random walk takes. The more the steps the closer to actual stock prices the plot will look like.
 
 #### Random Walk of 100 steps
-![Random Walk of 100 steps](http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/100.png)
+![Random Walk of 100 steps](/files/8-random-walk-in-2-lines-of-j/random-walks/100.png)
 
 #### Random Walk of 200 steps
-![Random Walk of 200 steps](http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/200.png)
+![Random Walk of 200 steps](/files/8-random-walk-in-2-lines-of-j/random-walks/200.png)
 
 #### Random Walk of 500 steps
-![Random Walk of 500 steps](http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/500.png)
+![Random Walk of 500 steps](/files/8-random-walk-in-2-lines-of-j/random-walks/500.png)
 
 #### Random Walk of 1,000 steps
-![Random Walk of 1,000 steps](http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/1000.png)
+![Random Walk of 1,000 steps](/files/8-random-walk-in-2-lines-of-j/random-walks/1000.png)
 
 #### Random Walk of 10,000 steps
-![Random Walk of 10,000 steps](http://asindu.xyz/files/8-random-walk-in-2-lines-of-j/random-walks/10000.png)
+![Random Walk of 10,000 steps](/files/8-random-walk-in-2-lines-of-j/random-walks/10000.png)

@@ -7,10 +7,26 @@
     <section>
 
       <ul class="posts">
+        {{ $counter := sub (len (where .Site.RegularPages "Section" "=" "posts")) 1 }}
         {{ range (.Paginate ( where .Site.RegularPages "Section" "posts" ).ByDate.Reverse).Pages }}
           {{ if ne .Kind "section" }}
           <li itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-            <a href="{{ .Permalink }}" title="{{ .Title }}" itemprop="name url">{{ .Title }}</a>
+
+            {{/* Descending counter (N-1 through 0) */}}
+              {{ if compare.Le $counter 9 }}
+              <a href="{{ .Permalink }}" title="{{ .Title }}" itemprop="name url"><span style="color: #c84b31;">000{{ $counter }}</span> {{ .Title }}</a>
+              {{ end}}
+
+              {{ if and (compare.Le $counter 99)  (compare.Gt $counter 9) }}
+              <a href="{{ .Permalink }}" title="{{ .Title }}" itemprop="name url"><span style="color: #c84b31;">00{{ $counter }}</span> {{ .Title }}</a>
+              {{ end}}
+
+              {{ if and (compare.Le $counter 999)  (compare.Gt $counter 99) }}
+              <a href="{{ .Permalink }}" title="{{ .Title }}" itemprop="name url"><span style="color: #c84b31;">0{{ $counter }}</span> {{ .Title }}</a>
+              {{ end}}
+
+            {{ $counter = sub $counter 1 }}
+
             <hr>
            <time datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat "2006-01-02" .Date }}</time>
           </li>

@@ -9,7 +9,7 @@ _* Last updated 18th May 2024_
 
 ## Labour.Quest
 
-[Labour.Quest](https://labour.quest) is a resume builder that provides its users insights into how recruiters interact with their resume.
+[Labour.Quest](https://labour.quest) is a resume builder that provides its users insights into how recruiters interact with their resume. Still early stages. (alpha version)
 
 ## Writing on a Book.
 

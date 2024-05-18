@@ -5,5 +5,7 @@ url: "/about/"
 noComment: true
 ---
 
-email: hi@asindu.xyz
+Here is what I am [currently up to now](/now)
+
+
 

@@ -19,4 +19,9 @@
                 />{{ end }}
   </url>
   {{ end }}
+  <url>
+    <loc>https://asindu.xyz/ads.txt</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 </urlset>

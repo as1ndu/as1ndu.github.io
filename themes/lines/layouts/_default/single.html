@@ -7,7 +7,38 @@
   <section>
 
       {{ if eq .Type "posts" }}
-      <h2 itemprop="name headline">{{ .Title }}</h2>
+
+      {{ $list_of_posts := (where .Site.RegularPages  "Section" "posts" ).ByDate.Reverse }}
+      {{ $counter := sub (len (where .Site.RegularPages "Section" "=" "posts")) 1 }}
+      {{ $current_post := .Title }}
+
+      {{ range $list_of_posts }}
+
+        {{ if compare.Le $counter 9 }}
+          {{ if compare.Eq $current_post .Title}}
+          <h2 itemprop="name headline"><span style="color: #ecdbba;">000{{ $counter }}</span> {{ $current_post }}</h2>
+          {{ break }}
+        {{ end }}
+        {{ end}}
+
+        {{ if and (compare.Le $counter 99)  (compare.Gt $counter 9) }}
+        <h2 itemprop="name headline"><span style="color: #ecdbba;">00{{ $counter }}</span> {{ .Title }}</h2>
+        {{ end}}
+
+        {{ if and (compare.Le $counter 999)  (compare.Gt $counter 99) }}
+        <h2 itemprop="name headline"><span style="color: #ecdbba;">0{{ $counter }}</span> {{ .Title }}</h2>
+        {{ end}}
+
+        {{ $counter = sub $counter 1  }}
+
+      {{ end }}
+
+      <!--
+        <h2 itemprop="name headline">{{ .Title }}</h2>
+      -->
+      <p>
+      by Asindu (<a style="color: aquamarine; text-decoration: none;" href="https://x.com/as1ndu">@as1ndu</a> on  <span style="font-size: x-large; color: aquamarine;">𝕩</span>)
+      </p>
       <p class="meta">
         <time itemprop="datePublished" datetime="{{ dateFormat "2006-01-02" .Date }}">{{ dateFormat " January 02, 2006" .Date }}</time> &bull;
         {{ partial "tags.html" .}}

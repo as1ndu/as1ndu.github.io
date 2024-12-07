@@ -10,7 +10,7 @@ When ever you hear people trying to convince other people to switch to Firefox t
 
 A usually toted reason, is that capitalist browsers like Chrome, Safari & Edge have too much market share. So we need to switch to the less pathologically operated Firefox — this post is not about that.
 
-I recently switched to Firefox form Chrome. I felt like I was missing out on so much.
+I recently switched to Firefox from Chrome. I felt like I was missing out on so much.
 
 Chrome is  simply *no longer better* than Firefox, features wise. *Firefox is now the superior browser!*
 

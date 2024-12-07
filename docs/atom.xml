@@ -1,4 +1,52 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Asindu's Journal</title><description>A public journal about thoughts going through Asindu's head.</description><link>https://asindu.xyz</link><language>en</language><copyright>Copyright 2024, Asindu Drileba</copyright><lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="http://asindu.xyz/atom.xml" rel="self" type="application/atom+xml"/><item><title>The Nature of Technology Book Review</title><link>https://asindu.xyz/posts/the-nature-of-technology-book-review/</link><description>&lt;p>Last year I read a book titled &lt;strong>&amp;ldquo;The Nature of Technology&amp;rdquo;&lt;/strong> by one W. Brian Arthur. After finishing it, it was one of those books that I wish everyone read. Especially if you&amp;rsquo;re interested in technology, technological progress, the notion wealth creation or economic growth. &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Asindu's Journal</title><description>A public journal about thoughts going through Asindu's head.</description><link>https://asindu.xyz</link><language>en</language><copyright>Copyright 2024, Asindu Drileba</copyright><lastBuildDate>Sat, 07 Dec 2024 00:00:00 +0000</lastBuildDate><generator>Hugo - gohugo.io</generator><docs>http://cyber.harvard.edu/rss/rss.html</docs><atom:link href="http://asindu.xyz/atom.xml" rel="self" type="application/atom+xml"/><item><title>Switching to Firefox</title><link>https://asindu.xyz/posts/switching-to-firefox/</link><description>&lt;p>When ever you hear people trying to convince other people to switch to Firefox the reason is usually moral or ideological. &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>A usually toted reason, is that capitalist browsers like Chrome, Safari &amp;amp; Edge have too much market share. So we need to switch to the less pathologically operated Firefox — this post is not about that.&lt;/p>
+&lt;p>I recently switched to Firefox form Chrome. I felt like I was missing out on so much.&lt;/p>
+&lt;p>Chrome is simply &lt;em>no longer better&lt;/em> than Firefox, features wise. &lt;em>Firefox is now the superior browser!&lt;/em>&lt;/p>
+&lt;hr>
+&lt;p>I recently felt like I should just &amp;ldquo;try out&amp;rdquo; Firefox.&lt;/p>
+&lt;p>So I installed it on my phone, this post is about features on Firefox Mobile that I suspect will never exist in chrome.&lt;/p>
+&lt;h2 id="firefox-extensions">Firefox Extensions &lt;a href="#firefox-extensions" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Chrome extensions are only limited to the desktop version.&lt;/p>
+&lt;p>Not with Firefox Mobile, with Firefox mobile you can install extensions on the mobile browser. So you can actually block all ads on all websites using uBlock Origin&amp;rsquo;s Firefox Extension.&lt;/p>
+&lt;p>You can also install many other browser extensions. As I have below. This will probably never exist in chrome on mobile.&lt;/p>
+&lt;p>&lt;img src="https://asindu.xyz/files/10-switching-to-firefox/extensions_list.jpg" alt="List of My installed Extensions" loading="lazy" />
+&lt;/p>
+&lt;h2 id="view-pdfs-in-browser">View PDFs in browser &lt;a href="#view-pdfs-in-browser" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>I usually find my self following links that are not to web pages but PDF files.&lt;/p>
+&lt;p>Chrome on mobile has requires you to download the PDF file and is still not even capable of viewing them.&lt;/p>
+&lt;p>You will have to use a clunky third party app like Google Drive to view the contents of the PDF.&lt;/p>
+&lt;p>I expected this behavior on Firefox mobile. But everything just loaded nicely. I&amp;rsquo;m browser, without the need to download it or use third party clunky PDF reader apps.&lt;/p>
+&lt;p>PDFs on Firefox mobile were simply loaded fast, with panning, zooming capability and a download button incase you want it stored locally.&lt;/p>
+&lt;p>Everything with web hosted PDFs has become much more convenient with Firefox mobile.&lt;/p>
+&lt;p>&lt;img src="https://asindu.xyz/files/10-switching-to-firefox/pdf.jpg" alt="Reading the Bitcoin Whitepaper PDF without having to download it" loading="lazy" />
+&lt;/p>
+&lt;h2 id="automatic-history-deletion">Automatic History Deletion &lt;a href="#automatic-history-deletion" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>On chrome, there is &amp;ldquo;incognito&amp;rdquo; that doesn&amp;rsquo;t Keep any browsing history after exiting. A similar product on Firefox is &amp;ldquo;private tabs&amp;rdquo;.&lt;/p>
+&lt;p>However, Firefox has something more bespoke for &amp;ldquo;power users&amp;rdquo;.&lt;/p>
+&lt;p>Suppose you only want your browsing history wiped out, but don&amp;rsquo;t want to log in again after opening the browser?&lt;/p>
+&lt;p>For this, Firefox has &amp;ldquo;delete browsing data on quit&amp;rdquo;. You won&amp;rsquo;t need need to use &amp;ldquo;private tabs&amp;rdquo; for this (Chrome&amp;rsquo;s incognito equivalent) it just works in the default Firefox tabs.&lt;/p>
+&lt;p>Every time you hit the &amp;ldquo;quite&amp;rdquo; button, Firefox will automatically wipe out the browsing history according to your exact specifications.&lt;/p>
+&lt;p>&lt;img src="https://asindu.xyz/files/10-switching-to-firefox/delete_browsing_data_on_quit.jpg" alt="Delete browsing data on quit" loading="lazy" />
+&lt;/p>
+&lt;h2 id="a-word-to-the-mozilla-team">A word to the Mozilla team &lt;a href="#a-word-to-the-mozilla-team" class="hash">#&lt;/a>&lt;/h2>
+&lt;p>Okay so given all this, Firefox still isn&amp;rsquo;t perfect.&lt;/p>
+&lt;p>Only one thing would make it perfect and better than Chrome in every possible way, feature wise.&lt;/p>
+&lt;p>The feature is &lt;code>about:config&lt;/code>. In chrome the equivalent feature is called &lt;code>chrome://flags&lt;/code>.&lt;/p>
+&lt;p>What funny is that it actually existed before and was simply turned off for about 4 years at the time of this writing.&lt;/p>
+&lt;p>It even still exists in Firefox Mobile Nightly (a buggy version of Firefox for testers).&lt;/p>
+&lt;p>The reasons for Firefox turning this off are very unsatisfactory. And many Firefox power users are begging for it to be returned &lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/p>
+&lt;p>If anyone on the Firefox team can make that happen, please do 🙏🏿&lt;/p>
+&lt;div class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1">
+&lt;p>While the moral reasons for switching to Firefox should be taken to account, I think it&amp;rsquo;s time to let people know that Firefox is not just the morally right choice, but not using it actually means your missing out on a lot — &lt;a href="https://archive.is/Ae7f2">https://archive.is/Ae7f2&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li id="fn:2">
+&lt;p>Link to the Mozilla connect forum around people discussing their need for &lt;code>about:config&lt;/code> to be returned on Firefox mobile — &lt;a href="https://archive.is/iu30k">https://archive.is/iu30k&lt;/a>&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/div></description><author>hi@asindu.xyz (Asindu Drileba)</author><guid>https://asindu.xyz/posts/switching-to-firefox/</guid><pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate></item><item><title>The Nature of Technology Book Review</title><link>https://asindu.xyz/posts/the-nature-of-technology-book-review/</link><description>&lt;p>Last year I read a book titled &lt;strong>&amp;ldquo;The Nature of Technology&amp;rdquo;&lt;/strong> by one W. Brian Arthur. After finishing it, it was one of those books that I wish everyone read. Especially if you&amp;rsquo;re interested in technology, technological progress, the notion wealth creation or economic growth. &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
 &lt;p>Brian Arthur is one of those &lt;strong>&amp;ldquo;complexity theorists&amp;rdquo;&lt;/strong>, that is, people that study the relationship between groups &amp;amp; the individual components that make them up.&lt;/p>
 &lt;p>An example is a stock market, you cannot trade stocks by yourself, you need to be in a group to trade stocks with each other.&lt;/p>
 &lt;p>The stock market can be looked at as a lumpy, single or independent system even when it is made up of many agents and the properties of the lumpy stock market may be very different from the properties of an individual agent in the market. Complexity theorists call this a Complex System. &lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>&lt;/p>

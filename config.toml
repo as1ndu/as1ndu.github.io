@@ -86,7 +86,13 @@ minify = true
     weight     = 2
 
   [[menu.main]]
+    identifier = "now"
+    name       = "⊙ Now"
+    url        = "/now"
+    weight     = 3
+
+  [[menu.main]]
     identifier = "rss"
     name       = "§ RSS"
     url        = "/atom.xml"
-    weight     = 3
+    weight     = 4

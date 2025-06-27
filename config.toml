@@ -4,11 +4,11 @@ title = "Asindu's Journal"
 publishDir = "docs"
 author = "Asindu Drileba"
 theme = "lines"
-pygmentsCodeFences = false
-pygmentsUseClasses = false
-paginate = 1000
-minify = true
 
+pygmentsCodeFences = true
+
+pagination.pagerSize = 100
+minify = true
 
 [taxonomies]
   tag = "tags"
@@ -85,11 +85,11 @@ minify = true
     url        = "/about"
     weight     = 2
 
-  [[menu.main]]
-    identifier = "now"
-    name       = "⊙ Now"
-    url        = "/now"
-    weight     = 3
+  # [[menu.main]]
+  #   identifier = "now"
+  #   name       = "⊙ Now"
+  #   url        = "/now"
+  #   weight     = 3
 
   [[menu.main]]
     identifier = "rss"

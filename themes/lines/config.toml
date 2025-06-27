@@ -5,7 +5,7 @@ disableKinds = ["section", "categories"]
 disqusShortname = ""
 pygmentsCodeFences = false
 pygmentsUseClasses = false
-paginate = 999
+pagination.pagerSize = 999
 minify = true
 
 

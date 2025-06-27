@@ -41,8 +41,7 @@ If you want to know more about what I am currently doing. You can check out my [
 Feel free to reach out to me via any of these options;
 
 - [Blue Sky](https://bsky.app/profile/asindu.xyz)
-- [@X (Formerly Twitter)](https://x.com/as1ndu)
-- [Signal](https://signal.me/#eu/ZIf5PToYgih_PaWnRHrP_OS5pua0ficmg41YPMS3FGXMEs6XD9xH-pmhZxUhTqnu)
+- [@X (Formerly Twitter)](https://x.com/asxndu)
 - [Email](mailto:journal.childlike260@passinbox.com)
 
 

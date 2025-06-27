@@ -1,6 +1,6 @@
 ---
 title : "Vibe Coding is Not an Advantage"
-slug : "11-vibe-coding-is-not-an-advantage"
+slug : "vibe-coding-is-not-an-advantage"
 draft : false
 tags : ["vibe-coding", "llms"]
 date : "2025-05-27"

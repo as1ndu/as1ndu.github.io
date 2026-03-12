@@ -1,7 +1,7 @@
 ---
 title: My Favorite 39C3 Talks
 date: 2025-03-01
-description: "The list of talks for the 39th event for C3 has been publicly released so I decided to look through the playlist and watched those that caught my attention"
+description: "I decided to look through the 39C3 playlist and watched the talks that caught my attention"
 draft: false
 ---
 The 39C3, is the 39th Chaos Communication Congress event, based in Germany. [^1]

@@ -1,7 +1,7 @@
 ---
 title: A Single Reason To Not Vibe Code
 date: 2026-02-15
-description: "What worries me is that this may happen to skilled programmers brains. The developed faculties of the brain concerning temporal logic might be wasted away"
+description: "What worries me is the atrophy ofconcerning temporal logic."
 draft: false
 ---
 Atrophy is defined on Wikipedia as _the partial or complete wasting away of a part of the body_. [^1]

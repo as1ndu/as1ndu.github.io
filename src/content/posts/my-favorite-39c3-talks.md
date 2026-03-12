@@ -57,7 +57,7 @@ The use of drones in warfare was way older that I thought. All the way from WWI 
 
 ![](/39C3-Talks/remote-control-drone.jpg)
 
-**Silde From Talk**_: Remote control drone from 1930s_
+**Silde From Talk:** _Remote control drone from 1930s_
 
 
 <a href="https://buttondown.com/the-black-epicure/archive/my-favorite-39c3-talks/#comments">

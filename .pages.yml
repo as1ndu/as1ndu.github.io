@@ -13,10 +13,11 @@ content:
       fields: [title, date]
       primary: title
     fields:
-      - { name: title,       label: Title,            type: string,    required: true }
-      - { name: date,        label: Publication Date, type: string,    required: true }
-      - { name: description, label: Description,      type: string,    required: true }
-      - { name: body,        label: Body,             type: rich-text, required: true }
+      - { name: title,       label: Title,            type: string,    required: true, default: "Title"       }
+      - { name: draft,       label: Draft,            type: boolean,   required: true, default: true          }
+      - { name: date,        label: Publication Date, type: string,    required: true, default: "1970-12-31"  }
+      - { name: description, label: Description,      type: string,    required: true, default: "Description" }
+      - { name: body,        label: Body,             type: rich-text, required: true, default: "Body"        }
 
 # Pages
   - name:  about

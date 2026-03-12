@@ -2,6 +2,7 @@
 title: My Favorite 39C3 Talks
 date: 2025-03-01
 description: "The list of talks for the 39th event for C3 has been publicly released so I decided to look through the playlist and watched those that caught my attention"
+draft: false
 ---
 The 39C3, is the 39th Chaos Communication Congress event, based in Germany. [^1]
 I have often seen people share talks individually and found some interesting.
@@ -20,7 +21,7 @@ What was also very laughable was that one military satellite simply shuffled str
 
 ![](/39C3-Talks/payment-details.jpg)
 
-**_Slide From Talk:_** _It turns out you could see unencrypted payment details (card numbers, card names and balances) of people when they use payment processors._
+**Slide From Talk:** _It turns out you could see unencrypted payment details (card numbers, card names and balances) of people when they use payment processors._
 
 ## How 0-Click Exploits Actually Work
 
@@ -56,7 +57,7 @@ The use of drones in warfare was way older that I thought. All the way from WWI 
 
 ![](/39C3-Talks/remote-control-drone.jpg)
 
-**_Silde From Talk_**_: Remote control drone from 1930s_
+**Silde From Talk**_: Remote control drone from 1930s_
 
 
 <a href="https://buttondown.com/the-black-epicure/archive/my-favorite-39c3-talks/#comments">

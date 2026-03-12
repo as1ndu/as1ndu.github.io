@@ -1,7 +1,8 @@
 ---
 title: African Time Explained Properly
-pubDate: 2025-07-09
+date: 2025-07-09
 description: ""
+draft: true
 ---
 \- clock time
 

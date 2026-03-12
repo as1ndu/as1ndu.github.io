@@ -2,6 +2,7 @@
 title: Theological roots of Artificial Intelligence
 date: 2025-07-09
 description: ""
+draft: true
 ---
 \- the Vatican on AI (https://archive.is/O7qzw)  
   

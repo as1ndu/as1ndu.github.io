@@ -2,6 +2,7 @@
 title: A Single Reason To Not Vibe Code
 date: 2026-02-15
 description: "What worries me is that this may happen to skilled programmers brains. The developed faculties of the brain concerning temporal logic might be wasted away"
+draft: false
 ---
 Atrophy is defined on Wikipedia as _the partial or complete wasting away of a part of the body_. [^1]
 
@@ -11,9 +12,9 @@ This happens with muscles. For instance, when you stop working out at the gym, y
 
 What worries me is that this may happen to skilled programmers brains. The developed faculties of the brain concerning temporal logic [^2] might be wasted away such that;
 
-- *a)* Other tasks that might have benefited from your “programming cognitive muscles” might get harder to do.
+**a)** Other tasks that might have benefited from your “programming cognitive muscles” might get harder to do.
 
-- *b)* It might get harder to learn a new “programming like” skill that shows up in the future.
+**b)** It might get harder to learn a new “programming like” skill that shows up in the future.
 
 In London for example, they have a taxi service informally referred to as “Black Cabs”.
 It turns out that in order to work for these “Black Cabs” you are required to memorize over 40,000 streets, landmarks and major buildings. [^3]

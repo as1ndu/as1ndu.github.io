@@ -1,14 +1,25 @@
 ---
 import Layout from "../components/Layout.astro";
 import Article from "../components/Article.astro";
-import { getCollection, render } from "astro:content";
+import { getCollection, render, type CollectionEntry } from "astro:content";
+
 
 export async function getStaticPaths() {
-  const posts = await getCollection("posts");
+
+  // remove drafts
+  async function getFilteredPosts() {
+  const posts = await getCollection('posts')
+  return posts.filter((post: CollectionEntry<'posts'>) => !(post.data.draft == true))
+}
+
+// non-drafts
+const posts = await getFilteredPosts()
+
   return posts.map((entry) => ({
     params: { slug: entry.id },
     props: entry,
   }));
+
 }
 
 const post = Astro.props;

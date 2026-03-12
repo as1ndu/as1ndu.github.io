@@ -1,6 +1,5 @@
 ---
 title: Blog Roll
-description: Sample Post.
+description: A list of other blogs that I read
 ---
-
 Blog Roll

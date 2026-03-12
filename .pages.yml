@@ -25,8 +25,8 @@ content:
     path:  src/content/about.md
     fields:
       - { name: title, label: Title, type: string }
-      - { name: body, label: Body, type: rich-text}
       - { name: description, label: Description,  type: rich-text}
+      - { name: body, label: Body, type: rich-text}
 
 
   - name:  now
@@ -35,8 +35,8 @@ content:
     path:  src/content/now.md
     fields:
       - { name: title,       label: Title, type: string }
-      - { name: body,        label: Body,  type: rich-text}
       - { name: description, label: Description,  type: rich-text}
+      - { name: body,        label: Body,  type: rich-text}
 
 
   - name:  roll
@@ -45,8 +45,8 @@ content:
     path:  src/content/roll.md
     fields:
       - { name: title,  label: Title, type: string }
-      - { name: body,   label: Body,  type: rich-text}
       - { name: description, label: Description,  type: rich-text}
+      - { name: body,   label: Body,  type: rich-text}
 
 
 

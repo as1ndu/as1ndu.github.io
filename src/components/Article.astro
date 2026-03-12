@@ -1,0 +1,71 @@
+---
+import Heading from "./Heading.astro";
+import Prose from "./Prose.astro";
+
+interface Props {
+  title: string;
+  date: Date;
+  description: string;
+}
+
+const { title, date, description } = Astro.props;
+
+const formattedDate = date.toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
+---
+
+<article class="article">
+
+  <header class="article-header">
+    <Heading as="h1">{title}</Heading>
+    <p class="article-meta">
+      <time datetime={date.toISOString()}>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21q-1.875 0-3.512-.712t-2.85-1.925t-1.925-2.85T3 12t.713-3.512t1.924-2.85t2.85-1.925T12 3q2.05 0 3.888.875T19 6.35V4h2v6h-6V8h2.75q-1.025-1.4-2.525-2.2T12 5Q9.075 5 7.038 7.038T5 12t2.038 4.963T12 19q2.625 0 4.588-1.7T18.9 13h2.05q-.375 3.425-2.937 5.713T12 21m2.8-4.8L11 12.4V7h2v4.6l3.2 3.2z"/></svg>                  
+        {formattedDate}
+      </time>
+    </p>
+  </header>
+
+  <form action="https://buttondown.com/api/emails/embed-subscribe/the-black-epicure" method="post" class="minimal-form">
+      <div class="input-group">
+        <label for="email"> 
+          <b style="color: #90B2E4;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 5l-8-5zm0 12H4V8l8 5l8-5z"/></svg>
+            Subscribe For Updates
+          </b>
+        <br/>
+        <input class="minimal-form-email" type="email" name="email" id="email" placeholder="steve.jobs@apple.com" required />
+        </label>
+      </div>
+      
+      <input type="hidden" value="1" name="embed" />
+      <input class="minimal-form-subscribe" type="submit" value="Subscribe" />
+  </form>
+  <br/>
+
+  <Prose>
+    <slot />
+  </Prose>
+
+</article>
+
+<style>
+  .article {
+    max-width: var(--width-content);
+  }
+
+  .article-header {
+    margin-bottom: var(--space-sm);
+  }
+
+  .article-meta {
+    font-family: var(--font-heading);
+    font-size: 0.8125rem;
+    color: #EF9651;
+    margin-top: 0px;
+  }
+
+</style>

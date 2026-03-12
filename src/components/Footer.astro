@@ -1,0 +1,25 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <p>&copy; {year} <span style="color: wheat;">Asindu Drileba</span>. All rights reserved.</p>
+
+  <br/>
+  <small>
+    *Design is a modified version of <a href="https://github.com/Get-UINUX/uinux-blog">UINUX Blog</a> Astro Theme
+  </small>
+</footer>
+
+<style>
+  .footer {
+    margin-top: var(--space-md);
+    padding: var(--space-lg) 0;
+  }
+
+  .footer p {
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    color: var(--color-link);
+  }
+</style>

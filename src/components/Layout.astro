@@ -1,0 +1,100 @@
+---
+import Nav from "./Nav.astro";
+import Footer from "./Footer.astro";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+  ogType?: "website" | "article";
+  ogImage?: string;
+}
+
+const {
+  title,
+  description = "A quiet place to read.",
+  ogType = "website",
+  ogImage,
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const googleVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {googleVerification && <meta name="google-site-verification" content={googleVerification} />}
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL.href} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL.href} />
+    <meta property="og:site_name" content="The Black Epicure" />
+    {ogImage && <meta property="og:image" content={ogImage} />}
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content={ogImage ? "summary_large_image" : "summary"} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {ogImage && <meta name="twitter:image" content={ogImage} />}
+
+    <!-- JSON-LD -->
+    <slot name="head" />
+
+    <link rel="alternate" type="application/rss+xml" title="The Black Epicure" href="/rss.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400;1,500&family=JetBrains+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;1,9..40,300&family=Noto+Rashi+Hebrew:wght@900&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png"> -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-66PXECJQ80"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-66PXECJQ80');
+    </script>
+    
+  </head>
+  <body>
+    <div class="page">
+      <Nav />
+      <main>
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>
+
+<style>
+  .page {
+    max-width: var(--width-page);
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1;
+  }
+</style>

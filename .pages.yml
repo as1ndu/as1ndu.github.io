@@ -26,14 +26,18 @@ content:
     fields:
       - { name: title, label: Title, type: string }
       - { name: body, label: Body, type: rich-text}
+      - { name: description, label: Description,  type: rich-text}
+
 
   - name:  now
     label: Now Page
     type:  file
     path:  src/content/now.md
     fields:
-      - { name: title,  label: Title, type: string }
-      - { name: body,   label: Body,  type: rich-text}
+      - { name: title,       label: Title, type: string }
+      - { name: body,        label: Body,  type: rich-text}
+      - { name: description, label: Description,  type: rich-text}
+
 
   - name:  roll
     label: Blog Roll
@@ -42,6 +46,8 @@ content:
     fields:
       - { name: title,  label: Title, type: string }
       - { name: body,   label: Body,  type: rich-text}
+      - { name: description, label: Description,  type: rich-text}
+
 
 
     

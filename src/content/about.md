@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/PageLayout.astro
 title: More About Me
+description: Sample Post.
 ---
 About.

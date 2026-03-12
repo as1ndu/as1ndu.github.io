@@ -1,5 +1,6 @@
 ---
 title: More About Me
-description: Sample Post.
+description: Sample Post
 ---
-About.
+
+About

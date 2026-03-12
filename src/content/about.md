@@ -1,7 +1,5 @@
 ---
-title: "More About Me"
-description: "More information about me."
-date: 2026-02-01
+layout: ../../layouts/PageLayout.astro
+title: More About Me
 ---
-
-About 
+About.

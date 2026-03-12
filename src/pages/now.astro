@@ -1,34 +1,38 @@
 ---
-import Layout from "../components/Layout.astro";
-import Heading from "../components/Heading.astro";
-import Prose from "../components/Prose.astro";
+import Layout         from "../components/Layout.astro";
+import PageLayout     from "../components/PageLayout.astro";
+import * as nowPage from '../content/now.md';
+
+const page_content  = await nowPage.compiledContent();
+const postUrl       = new URL(`/about`, Astro.site).href;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": nowPage.frontmatter.title,
+  "description": nowPage.frontmatter.description,
+  "datePublished": (new Date()).toISOString(),
+  "url": postUrl,
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": postUrl,
+  },
+  "author": {
+    "@type": "Organisation",
+    "name": "Asindu Drileba",
+    "url": "https://asindu.xyz",
+  },
+  "publisher": {
+    "@type": "Organisation",
+    "name": "Asindu Drileba",
+    "url": "https://asindu.xyz",
+  },
+};
 ---
 
-<Layout title="What I'm Doing Now — The Black Epicure" description="More About Me">
-  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "What I'm Doing Now — The Black Epicure",
-    "description": "What I'm Doing Now",
-    "url": new URL("/about", Astro.site).href,
-    "isPartOf": {
-      "@type": "WebSite",
-      "name": "The Black Epicure",
-      "url": Astro.site?.href,
-    },
-  })} />
-  <section class="about">
-    <Heading as="h1">About</Heading>
-    <Prose>
-      <p>
-       More about me ...
-      </p>
-    </Prose>
-  </section>
+<Layout title={nowPage.frontmatter.title} description={nowPage.frontmatter.description} ogType="article">
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  <PageLayout title={nowPage.frontmatter.title} date={(new Date())} description={nowPage.frontmatter.description}>
+    <div set:html={page_content} />
+  </PageLayout>
 </Layout>
-
-<style>
-  .about {
-    max-width: var(--width-content);
-  }
-</style>

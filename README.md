@@ -1,3 +1,3 @@
 # The Black Epicure
 
-My personal blog
+My personal blog.

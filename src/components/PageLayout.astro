@@ -1,0 +1,43 @@
+---
+import Heading from "./Heading.astro";
+import Prose from "./Prose.astro";
+
+interface Props {
+  title: string;
+  date: Date;
+  description: string;
+}
+
+const { title, date, description } = Astro.props;
+
+---
+
+<article class="article">
+
+  <header class="article-header">
+    <Heading as="h1">{title}</Heading>
+  </header>
+ 
+  <Prose>
+    <slot />
+  </Prose>
+  
+</article>
+
+<style>
+  .article {
+    max-width: var(--width-content);
+  }
+
+  .article-header {
+    margin-bottom: var(--space-sm);
+  }
+
+  .article-meta {
+    font-family: var(--font-heading);
+    font-size: 0.8125rem;
+    color: #EF9651;
+    margin-top: 0px;
+  }
+
+</style>

@@ -1,0 +1,48 @@
+media:
+  input: public
+  output: /
+
+content:
+
+# Posts
+  - name:  posts
+    type:  collection
+    label: Posts
+    path:  src/content/posts
+    view:
+      fields: [title, date]
+      primary: title
+    fields:
+      - { name: title,       label: Title,            type: string,    required: true }
+      - { name: date,        label: Publication Date, type: string,    required: true }
+      - { name: description, label: Description,      type: string,    required: true }
+      - { name: body,        label: Body,             type: rich-text, required: true }
+
+# Pages
+  - name:  about
+    label: About page
+    type:  file
+    path:  src/content/about.md
+    fields:
+      - { name: layout, type: string, hidden: true, default: "../../layouts/PageLayout.astro" }
+      - { name: title, label: Title, type: string }
+      - { name: body, label: Body, type: rich-text}
+
+  - name:  now
+    label: Now Page
+    type:  file
+    path:  src/content/now.md
+    fields:
+      - { name: title,  label: Title, type: string }
+      - { name: body,   label: Body,  type: rich-text}
+
+  - name:  roll
+    label: Blog Roll
+    type:  file
+    path:  src/content/roll.md
+    fields:
+      - { name: title,  label: Title, type: string }
+      - { name: body,   label: Body,  type: rich-text}
+
+
+    

@@ -1,19 +1,19 @@
 ---
 title: My Favorite 39C3 Talks
-date: 2026-03-01
-description: "I decided to look through the 39C3 playlist and watched the talks that caught my attention"
 draft: false
+date: 2026-03-01
+description: I decided to look through the 39C3 playlist and watched the talks
+  that caught my attention
 ---
-The 39C3, is the 39th Chaos Communication Congress event, based in Germany. [^1]
-I have often seen people share talks individually and found some interesting.
+The 39C3, is the 39th Chaos Communication Congress event, based in Germany. \[^1\] I have often seen people share talks individually and found some interesting.
 
-The list of talks for the 39th event for C3 has been publicly released so I decided to look through the playlist and watched those that caught my attention. [^2]
+The list of talks for the 39th event for C3 has been publicly released so I decided to look through the playlist and watched those that caught my attention. \[^2\]
 
 I believe we could learn alot from all of the talks. But I wanted to share my favourite highlights.
 
 ## Harvesting Data from Satellites
 
-In this talk, two researchers talk about using ~ $500 equipment to evesdrop satellites belonging to the Military, Payment Processors and Airline Companies.[^3]
+In this talk, two researchers talk about using ~ $500 equipment to evesdrop satellites belonging to the Military, Payment Processors and Airline Companies.\[^3\]
 
 A depressing realisation was that alot of the data was in plain text.
 
@@ -27,11 +27,11 @@ What was also very laughable was that one military satellite simply shuffled str
 
 I always wondered how 0-click exploits, a way hackers can get into your device without requiring you to ever click anything work.
 
-This video walks you through a step by step process on how hackers find such an exploit and how they use it. Demos are made for WhatsApp & iMesages on iOS and Samsung. [^4]
+This video walks you through a step by step process on how hackers find such an exploit and how they use it. Demos are made for WhatsApp & iMesages on iOS and Samsung. \[^4\]
 
 ## CPUs are permanent vulnerabilities
 
-The talk is titled "Spectre in the real world: Leaking your private data from the cloud with CPU vulnerabilities" [^5]
+The talk is titled "Spectre in the real world: Leaking your private data from the cloud with CPU vulnerabilities" \[^5\]
 
 To quote the speaker;
 
@@ -51,7 +51,7 @@ This was a very good pitch on why a cloud instance should rather be hosted on a 
 
 ## The Current Drone wars
 
-This talk had nothing to do with cyber security, but was more about, the use of drones in warfare. It presents the historical use of drones in war and how it has changed with time, to what it is today. [^6]
+This talk had nothing to do with cyber security, but was more about, the use of drones in warfare. It presents the historical use of drones in war and how it has changed with time, to what it is today. \[^6\]
 
 The use of drones in warfare was way older that I thought. All the way from WWI used for information gathering.
 
@@ -59,21 +59,16 @@ The use of drones in warfare was way older that I thought. All the way from WWI 
 
 **Silde From Talk:** _Remote control drone from 1930s_
 
+[Add Comment](https://buttondown.com/the-black-epicure/archive/my-favorite-39c3-talks/#comments)
 
-<a href="https://buttondown.com/the-black-epicure/archive/my-favorite-39c3-talks/#comments">
-<button style="padding: 5px">
-Add Comment
-</button>
-</a>
+\[^1\]: Official [website for C3](https://www.ccc.de/en)
 
-[^1]: Official [website for C3](https://www.ccc.de/en)
+\[^2\]: YouTube [Playlist of 39C3 talks.](https://youtube.com/playlist?list=PL_IxoDz1Nq2ajswL6wmP1qxyh-Iqon5oz)
 
-[^2]: YouTube [Playlist of 39C3 talks.](https://youtube.com/playlist?list=PL_IxoDz1Nq2ajswL6wmP1qxyh-Iqon5oz)
+\[^3\]: [Don’t look up: There are sensitive internal links in the clear on GEO satellites](https://www.youtube.com/watch?v=fM5w7bFNvWI)
 
-[^3]: [Don’t look up: There are sensitive internal links in the clear on GEO satellites](https://www.youtube.com/watch?v=fM5w7bFNvWI)
+\[^4\]: [A Deep Dive into WhatsApp 0-Click Exploits on iOS and Samsung Devices](https://www.youtube.com/watch?v=cbSgKmLA1AI)
 
-[^4]: [A Deep Dive into WhatsApp 0-Click Exploits on iOS and Samsung Devices](https://www.youtube.com/watch?v=cbSgKmLA1AI)
+\[^5\]: [Spectre in the real world: Leaking your private data from the cloud with CPU vulnerabilities](https://www.youtube.com/watch?v=_fPanvQcwe4)
 
-[^5]: [Spectre in the real world: Leaking your private data from the cloud with CPU vulnerabilities](https://www.youtube.com/watch?v=_fPanvQcwe4)
-
-[^6]: [Current Drone Wars](https://www.youtube.com/watch?v=3CvDsqZvIuw)
+\[^6\]: Talk on the [Current Drone Wars](https://www.youtube.com/watch?v=3CvDsqZvIuw)

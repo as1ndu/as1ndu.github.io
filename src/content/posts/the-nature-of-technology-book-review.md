@@ -1,11 +1,7 @@
 ---
 title : "The Nature of Technology Book Review"
 date : 2024-03-05
-description: "
-The Nature of Technology Book is a book by complexity theorist, Brian Arthur that describes
-what technology is, and how it evolves. In this blog post, I describe a few take aways from the book that hopefully
-inspire you to pick it up.
-"
+description: "The Nature of Technology Book is a book by the evonomist, Brian Arthur I describe a few take aways from the book that"
 draft : true
 ---
 

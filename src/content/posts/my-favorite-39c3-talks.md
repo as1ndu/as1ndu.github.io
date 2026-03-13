@@ -1,6 +1,6 @@
 ---
 title: My Favorite 39C3 Talks
-date: 2025-03-01
+date: 2026-03-01
 description: "I decided to look through the 39C3 playlist and watched the talks that caught my attention"
 draft: false
 ---

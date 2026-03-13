@@ -11,7 +11,9 @@ import { getCollection, type CollectionEntry } from "astro:content";
 
 // non-drafts
 const blog_posts = (await getFilteredPosts()).sort(
-  (b, a) => b.data.date.valueOf() - a.data.date.valueOf()
+
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+
 );
 ---
 

@@ -70,7 +70,7 @@ We simply cannot invent the cryptography first, and then come up with the mathem
 
 So if we want people to find new phenomena that may potentially be used to build new technology we need to;
 
-*   a) Allow students, researchers to peruse topics that are not obviously useful**.**
+*   a) Allow students, researchers to peruse topics that are not obviously useful\*\*.\*\*
     
 *   b) If you want to get ideas for new technology to invent. A good way to do so it is to simply study & curate phenomena, in physics, mathematics, biology, economics or psychology e.t.c. And then try to leverage it to do something useful. If you are successful and the first to do so, you probably would have invented new technology.
     

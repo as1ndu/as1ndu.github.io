@@ -2,15 +2,16 @@
 title: The Nature of Technology Book Review
 draft: false
 date: 2024-03-05
-description: The Nature of Technology Book is a book by Brian Arthur. I describe a few take aways from the book.
+description: The Nature of Technology Book is a book by Brian Arthur. I describe
+  a few take aways from the book.
 ---
-Last year I read a book titled **"The Nature of Technology"** by one W. Brian Arthur. After finishing it, it was one of those books that I wish everyone read. Especially if you're interested in technology, technological progress, the notion wealth creation or economic growth. [^1]
+Last year I read a book titled **"The Nature of Technology"** by one W. Brian Arthur. After finishing it, it was one of those books that I wish everyone read. Especially if you're interested in technology, technological progress, the notion wealth creation or economic growth. \[^1\]
 
 Brian Arthur is one of those **"complexity theorists"**, that is, people that study the relationship between groups & the individual components that make them up.
 
 An example is a stock market, you cannot trade stocks by yourself, you need to be in a group to trade stocks with each other.
 
-The stock market can be looked at as a lumpy, single or independent system even when it is made up of many agents and the properties of the lumpy stock market may be very different from the properties of an individual agent in the market. Complexity theorists call this a Complex System. [^2]
+The stock market can be looked at as a lumpy, single or independent system even when it is made up of many agents and the properties of the lumpy stock market may be very different from the properties of an individual agent in the market. Complexity theorists call this a Complex System. \[^2\]
 
 For people that are not aware of such a definition of complex systems, studying literature of these complexity theorists may just look like inter-disciplinary science.
 
@@ -22,11 +23,11 @@ I say this book is a good read because it provides insights into some action poi
 
 ## So, why should you read "The Nature of Technology"?
 
-*   **If you want a blueprint for generating tech start-up ideas or come up with inventions that people will find useful the book is for you.**
+*   If you want a blueprint for generating tech start-up ideas or come up with inventions that people will find useful the book is for you.
     
-*   **I often see discussions on social media, amongst friends, politicians on TV, on how cities, countries can become technologically competitive with other regions. One question for example is usually how can we have something like silicon valley in Africa, in Europe etc. Basically other communities wanting to replicate technological success equivalent to that in silicon valley (or just the West) in their own communities. If you want to know how this book is for you. (Hint: the answer isn't more homework time for children).**
+*   I often see discussions on social media, amongst friends, politicians on TV, on how cities, countries can become technologically competitive with other regions. One question for example is usually how can we have something like silicon valley in Africa, in Europe etc. Basically other communities wanting to replicate technological success equivalent to that in silicon valley (or just the West) in their own communities. If you want to know how this book is for you. (Hint: the answer isn't more homework time for children).
     
-*   **A childhood friend of mine and me used to talk about inventors. A lot of people's answers to this question is something like "things to invent are over" or "the low hanging fruit is gone". This book describes why there is only more stuff to invent and why with every subsequent invention there is actually more potential for people to invent more items or technologies. That is, there will be more, lower hanging fruit as more technological progress is made and more things to invent. The book properly explains why.**
+*   A childhood friend of mine and me used to talk about inventors. A lot of people's answers to this question is something like "things to invent are over" or "the low hanging fruit is gone". This book describes why there is only more stuff to invent and why with every subsequent invention there is actually more potential for people to invent more items or technologies. That is, there will be more, lower hanging fruit as more technological progress is made and more things to invent. The book properly explains why.
     
 
 The aim of this blog post is to write about some of the take aways I got from the book which may address some of the discussions I outlined above.
@@ -37,11 +38,11 @@ It would be inaccurate to call this a summary the book. The book is short (just 
 
 Now, for the meat of the article below, are some of the 3 most important take aways I got from reading the book.
 
-### 1. Technology relies on phenomena.
+### 1\. Technology relies on phenomena.
 
 The meaning of phenomena is something an event or pattern that can be observed.
 
-An example is the phenomena of electromagnetic waves that were investigated by the likes of Heinrich Hertz, Oliver Lodge and Guglielmo Marconi. Which are the basis of telecommunications TV Signals, Radio Signals, GPS, WiFi — basically all of wireless communication. [^3]
+An example is the phenomena of electromagnetic waves that were investigated by the likes of Heinrich Hertz, Oliver Lodge and Guglielmo Marconi. Which are the basis of telecommunications TV Signals, Radio Signals, GPS, WiFi — basically all of wireless communication. \[^3\]
 
 Another example is nuclear power that is based on the understanding of phenomena happening inside atoms.
 
@@ -51,7 +52,7 @@ So what, this is obvious? you may ask. The important insight isn't that technolo
 
 Let us first think of some practical implications of the above statement. If you want to have an ecosystem that creates new technology.
 
-We have to invest in basic scientific research and by this I mean both **teleological** & **non-teleological** research whose purpose is to document, curate and study different phenomena. [^4]
+We have to invest in basic scientific research and by this I mean both **teleological** & **non-teleological** research whose purpose is to document, curate and study different phenomena. \[^4\]
 
 **Teleological research** means investing in research whose use is obviously known. Like looking for the cure of cancer, if a break through in made in this field we know exactly how it will benefit society.
 
@@ -69,18 +70,18 @@ We simply cannot invent the cryptography first, and then come up with the mathem
 
 So if we want people to find new phenomena that may potentially be used to build new technology we need to;
 
-*   **a) Allow students, researchers to peruse topics that are not obviously useful.**
+*   a) Allow students, researchers to peruse topics that are not obviously useful**.**
     
-*   **b) If you want to get ideas for new technology to invent. A good way to do so it is to simply study & curate phenomena, in physics, mathematics, biology, economics or psychology e.t.c. And then try to leverage it to do something useful. If you are successful and the first to do so, you probably would have invented new technology.**
+*   b) If you want to get ideas for new technology to invent. A good way to do so it is to simply study & curate phenomena, in physics, mathematics, biology, economics or psychology e.t.c. And then try to leverage it to do something useful. If you are successful and the first to do so, you probably would have invented new technology.
     
 
 I will leave you with an excerpt from the book that expands on this point further.
 
-> **_The process is not one that can be easily controlled from the top down. There is always a temptation for governments to pursue science with particular commercial aims in view. But this rarely works. Had there been a stated purpose to quantum physics in the 1920s, it would have been deemed a failure. And yet quantum physics has given us the transistor, the laser, the basis of nanotechnology, and much else besides. Building a capacity for advanced technology is not like planning production in a socialist economy, but more like growing a rock garden. Planting, watering, and weeding are more appropriate than five-year plans_**
+> The process is not one that can be easily controlled from the top down. There is always a temptation for governments to pursue science with particular commercial aims in view. But this rarely works. Had there been a stated purpose to quantum physics in the 1920s, it would have been deemed a failure. And yet quantum physics has given us the transistor, the laser, the basis of nanotechnology, and much else besides. Building a capacity for advanced technology is not like planning production in a socialist economy, but more like growing a rock garden. Planting, watering, and weeding are more appropriate than five-year plans
 
 ### 2\. Technology is combinatorial
 
-I was listening to the Lex Friedman interview with Jeff Bezos. And he mentioned something that is relevant to this section of the blog post. [^5]
+I was listening to the Lex Friedman interview with Jeff Bezos. And he mentioned something that is relevant to this section of the blog post. \[^5\]
 
 Jeff Bezos mentioned in the interview that he identifies with himself as an inventor, what is relevant to the discussion here however is that Jeff Bezos also said that to "invent" Amazon he used components that were already invented. That is, the logistics infrastructure that was used by Amazon to make deliveries and the online payments processing infrastructure.
 
@@ -102,7 +103,7 @@ If we are to think of technologies as a combination of other technologies then w
 
 Consider two technologies `'A'` and `'B'`. If we create a new technology by combining those two we now have a new technology called `'AB'`. So in total we have three technologies i.e `'A'`, `'B'` and `'AB'` instead of two.
 
-Now we have three technologies to combine instead of two. Which gives us `'A'`, `'B'`, `'AB'`, `'AAB'`, `'BAB'`, and `'ABAB'`. The new technologies 'AAB', 'BAB', and 'ABAB' are a result of combining `'A'`, `'B'` and `'AB'` together. Now we have six technologies to combine in different ways that will even lead to more technology that can also provide more ways for technology to create new technology. This is the phenomena referred to by Brian Arthur as increasing returns. [^6]
+Now we have three technologies to combine instead of two. Which gives us `'A'`, `'B'`, `'AB'`, `'AAB'`, `'BAB'`, and `'ABAB'`. The new technologies 'AAB', 'BAB', and 'ABAB' are a result of combining `'A'`, `'B'` and `'AB'` together. Now we have six technologies to combine in different ways that will even lead to more technology that can also provide more ways for technology to create new technology. This is the phenomena referred to by Brian Arthur as increasing returns. \[^6\]
 
 **The mathematical abstraction above illustrated that starting with only two technological components, combining them in different ways gives us a larger set of technologies and thus a higher potential to create new technologies not less.**
 
@@ -116,7 +117,7 @@ So if technological progress actually slows down in the real world the reason sh
 
 Also, if you are a wannabe inventor, another blueprint for creating ideas is to think of how to combine different technologies and **then later** think of what this combination can be used for — Instead of first thinking about a solution/problem and then trying to look for the right combination that will solve the problem. **This can be regarded as a form of non-teleological invention. That is, inventing something whose purpose or use u may not know of at first creation.**
 
-### 3. Technology transmutes
+### 3\. Technology transmutes
 
 My last take away from this book is that "Technology transmutes" and to transmute means "to change form".
 
@@ -160,28 +161,28 @@ This dilemma of requiring "off-topic" knowledge in order to create a new form of
 
 You cannot design software for music producers, like FL Studio, Logic Pro or Cubase. If you have neither produced music nor worked around producers.
 
-You cannot come up with an MRI scanner for detecting cancer tumors like Raymond Damadian did[^7]. If you do not know about the basic composition of a cancer tumor. It will not matter how fantastic an electric engineer you are if you don't have this "off-topic" knowledge in the realm of medicine that describes the basic properties of a tumor in a human body.
+You cannot come up with an MRI scanner for detecting cancer tumors like Raymond Damadian did\[^7\]. If you do not know about the basic composition of a cancer tumor. It will not matter how fantastic an electric engineer you are if you don't have this "off-topic" knowledge in the realm of medicine that describes the basic properties of a tumor in a human body.
 
 If you want an extra blueprint, in your tool box of ways to come up with new technologies, it would be that you should look into what other people are doing in other professions, or activities that are not obviously relate to each other and this will give you a larger possible set of activities that you can **transmute**.
 
 I believe this action point of developing consilience, reveals some of the short comings of specialization and vindicates the value of hobbies/exploration/pondering outside our fields of scholarship, research and professions.
 
-An interview I recommend related to this topic is one given by David Eliot Shaw, I have linked a video to the exact time stamp where he proposes this "right brain thinking" and "thinking in analogies" as advice to young and upcoming scientists [^8].
+An interview I recommend related to this topic is one given by David Eliot Shaw, I have linked a video to the exact time stamp where he proposes this "right brain thinking" and "thinking in analogies" as advice to young and upcoming scientists \[^8\].
 
 Like I said this should **not** be regarded as a summary of the book it is more of a review and a few take aways. If you like technology you are very likely to enjoy the book and I suggest you read it.
 
-[^1]: [Here is a link to the book](https://www.amazon.com/Nature-Technology-What-How-Evolves/dp/1416544062). The full title is, "The Nature of Technology: What It Is and How It Evolves" by W. Brian Arthur
+\[^1\]: [Here is a link to the book](https://www.amazon.com/Nature-Technology-What-How-Evolves/dp/1416544062). The full title is, "The Nature of Technology: What It Is and How It Evolves" by W. Brian Arthur
 
-[^2]: The [Wikipedia page on complex systems](https://en.wikipedia.org/wiki/Complex_system) is really good. I suggest you have a look at it. You may want to look at the [El-farol bar problem](https://en.wikipedia.org/wiki/El_Farol_Bar_problem) also devised by Brian Arthur if your interested in this complex systems view of the stock market.
+\[^2\]: The [Wikipedia page on complex systems](https://en.wikipedia.org/wiki/Complex_system) is really good. I suggest you have a look at it. You may want to look at the [El-farol bar problem](https://en.wikipedia.org/wiki/El_Farol_Bar_problem) also devised by Brian Arthur if your interested in this complex systems view of the stock market.
 
-[^3]: Great BBC documentary on electricity. [Linked is a time stamp to the section that covers electro magnetic waves](https://www.youtube.com/watch?v=Gtp51eZkwoI&t=7010s)
+\[^3\]: Great BBC documentary on electricity. [Linked is a time stamp to the section that covers electro magnetic waves](https://www.youtube.com/watch?v=Gtp51eZkwoI&t=7010s)
 
-[^4]: In the book Anti-fragile by Nassim Taleb, he writes extensively about this in a section titled "Non-teleological Tinkering"
+\[^4\]: In the book Anti-fragile by Nassim Taleb, he writes extensively about this in a section titled "Non-teleological Tinkering"
 
-[^5]: Link to [Lex Fridman episode with Jeff Bezos](https://www.youtube.com/watch?v=DcWqzZ3I2cY)
+\[^5\]: Link to [Lex Fridman episode with Jeff Bezos](https://www.youtube.com/watch?v=DcWqzZ3I2cY)
 
-[^6]: [Increasing Returns and the New World of Business](https://hbr.org/1996/07/increasing-returns-and-the-new-world-of-business)
+\[^6\]: [Increasing Returns and the New World of Business](https://hbr.org/1996/07/increasing-returns-and-the-new-world-of-business)
 
-[^7]: Wikipedia page for the [Inventor of MRI scanner](https://en.wikipedia.org/wiki/Raymond_Damadian)
+\[^7\]: Wikipedia page for the [Inventor of MRI scanner](https://en.wikipedia.org/wiki/Raymond_Damadian)
 
-[^8]: Here is a YouTube link to the [David Elliot Shaw Interview](https://www.youtube.com/watch?app=desktop&v=GdlO8MwLGy0&t=139s)
+\[^8\]: Here is a YouTube link to the [David Elliot Shaw Interview](https://www.youtube.com/watch?app=desktop&v=GdlO8MwLGy0&t=139s)

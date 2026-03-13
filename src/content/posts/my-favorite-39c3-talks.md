@@ -1,6 +1,6 @@
 ---
 title: My Favorite 39C3 Talks
-draft: true
+draft: false
 date: 2026-03-01
 description: I decided to look through the 39C3 playlist and watched the talks
   that caught my attention

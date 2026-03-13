@@ -1,6 +1,6 @@
 ---
 title: A Single Reason To Not Vibe Code
-draft: true
+draft: false
 date: 2026-02-15
 description: What worries me is the atrophy ofconcerning temporal logic.
 ---

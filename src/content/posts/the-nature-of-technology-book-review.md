@@ -1,6 +1,6 @@
 ---
 title: The Nature of Technology Book Review
-draft: true
+draft: false
 date: 2024-03-05
 description: The Nature of Technology Book is a book by Brian Arthur. I describe
   a few take aways from the book.
@@ -17,7 +17,7 @@ For people that are not aware of such a definition of complex systems, studying 
 
 Brian Arthur in this book, brings about the mind set of thinking about technologies as a complex system (smaller components interacting to form larger groups) and uses it to provide some insights about technology that may be easy to understand but not blatantly obvious.
 
-I say this book is a must read because it provides insights into some action points incase you want to achieve some things — somethings that I think everyone might say are good to achieve.
+I say this book is a good read because it provides insights into some action points incase you want to achieve some things — somethings that I think everyone might say are good to achieve.
 
 * * *
 

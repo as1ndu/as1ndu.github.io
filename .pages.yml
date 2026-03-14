@@ -16,8 +16,8 @@ content:
       - { name: title,       label: Title,            type: string,    required: true, default: "Title"       }
       - { name: draft,       label: Draft,            type: boolean,   required: true, default: true          }
       - { name: date,        label: Publication Date, type: string,    required: true, default: "1970-12-31"  }
-      - { name: description, label: Description,      type: string,    required: true, default: "Description" }
-      - { name: body,        label: Body,             type: rich-text, required: true, default: "Body"        }
+      - { name: description, label: Description,      type: text,    required: true, default: "Description" }
+      - { name: body,        label: Body,             type: text,      required: true, default: "Body"        }
 
 # Pages
   - name:  about
@@ -26,8 +26,8 @@ content:
     path:  src/content/about.md
     fields:
       - { name: title, label: Title, type: string }
-      - { name: description, label: Description,  type: rich-text}
-      - { name: body, label: Body, type: rich-text}
+      - { name: description, label: Description,  type: text}
+      - { name: body, label: Body, type: text}
 
 
   - name:  now
@@ -36,8 +36,8 @@ content:
     path:  src/content/now.md
     fields:
       - { name: title,       label: Title, type: string }
-      - { name: description, label: Description,  type: rich-text}
-      - { name: body,        label: Body,  type: rich-text}
+      - { name: description, label: Description,  type: text}
+      - { name: body,        label: Body,  type: text}
 
 
   - name:  roll
@@ -46,8 +46,8 @@ content:
     path:  src/content/roll.md
     fields:
       - { name: title,  label: Title, type: string }
-      - { name: description, label: Description,  type: rich-text}
-      - { name: body,   label: Body,  type: rich-text}
+      - { name: description, label: Description,  type: text}
+      - { name: body,   label: Body,  type: text}
 
 
 

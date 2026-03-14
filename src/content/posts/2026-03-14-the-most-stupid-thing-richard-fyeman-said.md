@@ -7,3 +7,5 @@ description: Description
 Richard fynman on being depressed.
 
 will people doing work in "defence" claim to have the same regrets?
+
+Are drones the new nuclear weapons.

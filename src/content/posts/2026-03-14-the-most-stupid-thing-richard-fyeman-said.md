@@ -4,4 +4,6 @@ draft: true
 date: 1970-12-31
 description: Description
 ---
-Body
+Richard fynman on being depressed.
+
+will people doing work in "defence" claim to have the same regrets?

@@ -122,7 +122,7 @@ The available open source libraries can be combined in many ways to create new o
 
 So if technological progress actually slows down in the real world the reason should never be that "we are running out of ideas" or that, "the law hanging fruit is gone". The reasons may be more cultural that technical. It is less likely to be less hours spent on home work or lower IQ points of the population.
 
-Also, if you are a wannabe inventor, another blueprint for creating ideas is to think of how to combine different technologies and **then later** think of what this combination can be used for — Instead of first thinking about a solution/problem and then trying to look for the right combination that will solve the problem. **This can be regarded as a form of non-teleological invention. That is, inventing something whose purpose or use u may not know of at first creation.**
+Also, if you are a wannabe inventor, another blueprint for creating ideas is to think of how to combine different technologies and **then later** think of what this combination can be used for — Instead of first thinking about a solution/problem and then trying to look for the right combination that will solve the problem. **This can be regarded as a form of non-teleological invention. That is, inventing something whose purpose or use you may not know of at first creation.**
 
 ### 3. Technology transmutes
 
@@ -168,7 +168,7 @@ This dilemma of requiring "off-topic" knowledge in order to create a new form of
 
 You cannot design software for music producers, like FL Studio, Logic Pro or Cubase. If you have neither produced music nor worked around producers.
 
-You cannot come up with an MRI scanner for detecting cancer tumors like Raymond Damadian did\[^7\]. If you do not know about the basic composition of a cancer tumor. It will not matter how fantastic an electric engineer you are if you don't have this "off-topic" knowledge in the realm of medicine that describes the basic properties of a tumor in a human body.
+You cannot come up with an MRI scanner for detecting cancer tumors like Raymond Damadian did [^7]. If you do not know about the basic composition of a cancer tumor. It will not matter how fantastic an electric engineer you are if you don't have this "off-topic" knowledge in the realm of medicine that describes the basic properties of a tumor in a human body.
 
 If you want an extra blueprint, in your tool box of ways to come up with new technologies, it would be that you should look into what other people are doing in other professions, or activities that are not obviously relate to each other and this will give you a larger possible set of activities that you can **transmute**.
 

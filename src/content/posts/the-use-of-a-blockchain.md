@@ -1,10 +1,9 @@
 ---
-title : "The use of a blockchain"
-date  : 2021-04-26
-description: ""
-draft : true
+title: The Use Of A blockchain
+draft: true
+date: 2021-04-26
+description: I suggest that the purpose of a Blockchain is to eliminate agency risk.
 ---
-
 At the time of this writing, the price of [Bitcoin is up again](https://www.ft.com/content/3e196e5c-afb7-4450-a5cc-3e4f7d17a40c) and,  the "blockchain" is part of a [stack to over 5,000 startups](https://angel.co/blockchains).
 
 But what exactly is the "blockchain" proposition? Most information out there seems to be repeating words like "decentralized" without a coherent explanation, others are simply selling [pre-packaged notions of monetary theory](https://www.amazon.com/Bitcoin-Standard-Decentralized-Alternative-Central/dp/1119473861).
@@ -13,7 +12,7 @@ Even "big brains" like Robin Hanson and Bruce Schneir don't seem to understand w
 
 The reason for incoherence that there are too many wages, pitch decks  &  hopes of getting rich that rely on this proposition — everyone has their own spin.
 
-In writing this article I am aiming to improve that, but to understand what a blockchain is, we need to first understand **Bitcoin**, where it came from, why it was invented, and why it works (not how it works).
+In writing this, I am aiming to improve that, but to understand what a blockchain is, we need to first understand **Bitcoin**, where it came from, why it was invented, and why it works (not how it works).
 
 ***
 
@@ -113,21 +112,37 @@ Only business applications that have a principal-agent problem need a blockchain
 
 
 [^1]: Robin Hanson called it ["a tough call"](https://www.overcomingbias.com/2015/02/31017.html) and Bruce Schneier thinks it's out right useless. He thinks it just [shifts trust around](https://www.wired.com/story/theres-no-good-reason-to-trust-blockchain-technology/)
+
 [^2]: Coinbase recently listed publically in a ["liquidity event"](https://www.coindesk.com/coinbase-ipo-not-ipo-direct-listing)
+
 [^3]: Lawmakers explicitly passed a law to buy ["toxic assets"](https://en.wikipedia.org/wiki/Toxic_asset) from Banks. Thus transfering hundreds of billions of dollars in _losses_ from the private sector to the citizens.
+
 [^4]: The [principal-agent problem](https://www.investopedia.com/terms/p/principal-agent-problem.asp) also goes by the name "agency dilema", or informally "the sucker problem"
+
 [^5]: [The Troubled Asset Relief Program](https://en.wikipedia.org/wiki/Troubled_Asset_Relief_Program)  ot "TARP" was designed to facilitate this.
+
 [^6]: [Conflict's of interest were pointed out](https://en.wikipedia.org/wiki/Emergency_Economic_Stabilization_Act_of_2008#Potential_conflict_of_interest), and some  people alledge [Bob Rubin collected over $120M from CitiBank](https://fundamentalfinanceplaybook.com/bob-rubin-trade/) in the decade preceding the 2009 financial crisis.
+
 [^7]: Tax payer money was used to finance all of this.
+
 [^8]: Nomi Prins has a great book where she articulates the phenomena  of [collusion in central banking](https://www.amazon.com/Collusion-Central-Bankers-Rigged-World/dp/1568585624).
+
 [^9]: Most people will agree that a proof of work epoch is a competition. By this I am analogizing it as an [auction](https://en.wikipedia.org/wiki/Auction) where the currency used is computational power not cash.
+
 [^10]: The golden ticket or [golden nonce](https://github.com/progranism/Bitcoin-JavaScript-Miner/blob/master/miner.js#L44), is a value you get only when you spend the most hashes per second. It allow one to construct a coinbase transaction. And it's only valid for about 10 min.
+
 [^11]: I am referring to the element of [blocktime](https://www.investopedia.com/terms/b/block-time-cryptocurrency.asp). Which is approximately every 10 minutes on Bitcoin.
+
 [^12]: Nassim Taleb talks about how "dis-incentives" should be used for countering issues of the principle-agent problem.
+
 [^13]: Of course not by 100%, But at leave it "dis-incentivises" opportunistic behavior by taking the monetary gain out of it. Breaking th law on the blockchain literally doesn't pay.
+
 [^14]: I suggest you look into the story of then, Britain's second oldest bank, [Baring Bank](https://en.wikipedia.org/wiki/Barings_Bank), [I suggest you watch "25 Million Pounds"](https://thoughtmaybe.com/25-million-pounds/).
+
 [^15]: You just can't know 😂
+
 [^16]: [Paypal freezing](https://www.paypal.com/us/brc/article/understanding-account-limitations) can put some merchant's earnings at risk.
+
 [^17]: It would be a nice idea to have a way open source curators could have a trust minimized way of managing their donations.
 
 

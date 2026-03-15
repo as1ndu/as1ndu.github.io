@@ -1,10 +1,10 @@
 ---
-title : "Switching to Firefox"
-date  : 2024-12-07
-description: ""
-draft : true
+title: Switching to Firefox
+draft: false
+date: 2024-12-07
+description: This post is about why I switched to Firefox on Mobile and why I
+  actually think its genuinely better than Chrome.
 ---
-
 Whenever you hear people trying to convince other people to switch to Firefox the reason is usually moral or ideological. [^1]
 
 A usually toted reason, is that "capitalist" browsers like Chrome, Safari & Edge have too much market share. So we need to switch to the less pathologically operated Firefox — this post is not about that.
@@ -74,4 +74,5 @@ The reasons for Firefox turning this off are very unsatisfactory. And many Firef
 If anyone on the Firefox team can make that happen, please do 🙏🏿
 
 [^1]: While the moral reasons for switching to Firefox should be taken to account, I think it's time to let people know that Firefox is not just the morally right choice, but not using it actually means your missing out on a lot — https://archive.is/Ae7f2
+
 [^2]: Link to the Mozilla connect forum around people discussing their need for `about:config` to be returned on Firefox mobile — https://archive.is/iu30k

@@ -2,7 +2,6 @@
 title: Blog Roll
 description: A list of other blogs that I read
 ---
-
 A list of other personal blogs that I read.
 
 * [https://johncarlosbaez.wordpress.com/](https://johncarlosbaez.wordpress.com/)
@@ -47,4 +46,5 @@ A list of other personal blogs that I read.
 
 * [https://www.oranlooney.com/](https://www.oranlooney.com/)
 
-* [https://blog.cryptographyengineering.com](https://blog.cryptographyengineering.com)
+* [https://blog.cryptographyengineering.com](https://blog.cryptographyengineering.com).
+https://johnshearing.github.io/

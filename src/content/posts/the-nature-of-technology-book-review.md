@@ -1,5 +1,5 @@
 ---
-title: The Nature of Technology Book Review
+title: The Nature of Technology
 draft: false
 date: 2024-03-05
 description: The Nature of Technology Book is a book by Brian Arthur. I describe

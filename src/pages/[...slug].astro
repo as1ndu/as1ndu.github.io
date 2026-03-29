@@ -3,57 +3,77 @@ import Layout from "../components/Layout.astro";
 import Article from "../components/Article.astro";
 import { getCollection, render, type CollectionEntry } from "astro:content";
 
-
 export async function getStaticPaths() {
-
   // remove drafts
   async function getFilteredPosts() {
-  const posts = await getCollection('posts')
-  return posts.filter((post: CollectionEntry<'posts'>) => !(post.data.draft == true))
-}
+    const posts = await getCollection("posts");
+    return posts.filter(
+      (post: CollectionEntry<"posts">) => !(post.data.draft == true),
+    );
+  }
 
-// non-drafts
-const posts = await getFilteredPosts()
+  // non-drafts
 
-  return posts.map((entry) => ({
+  const posts = (await getFilteredPosts()).sort(
+    (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+  );
+
+  return posts.map((entry, index) => ({
     params: { slug: entry.id },
-    props: entry,
+    props: {
+      entry,
+      currentCount: posts.length - (index + 1),
+      // isFirst: index === 0,
+      // isLast: index === posts.length - 1
+    },
   }));
-
 }
 
 const post = Astro.props;
-const { Content } = await render(post);
+const { Content } = await render(post.entry);
 
-const postUrl = new URL(`/${post.id}`, Astro.site).href;
+const postUrl = new URL(`/${post.entry.id}`, Astro.site).href;
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": post.data.title,
-  "description": post.data.description,
-  "datePublished": post.data.date.toISOString(),
-  "url": postUrl,
-  "mainEntityOfPage": {
+  headline: post.entry.data.title,
+  description: post.entry.data.description,
+  datePublished: post.entry.data.date.toISOString(),
+  url: postUrl,
+  mainEntityOfPage: {
     "@type": "WebPage",
     "@id": postUrl,
   },
-  "author": {
+  author: {
     "@type": "Organisation",
-    "name": "Asindu Drileba",
-    "url": "https://asindu.xyz",
+    name: "Asindu Drileba",
+    url: "https://asindu.xyz",
   },
-  "publisher": {
+  publisher: {
     "@type": "Organisation",
-    "name": "Asindu Drileba",
-    "url": "https://asindu.xyz",
+    name: "Asindu Drileba",
+    url: "https://asindu.xyz",
   },
 };
 ---
 
-<Layout title={`${post.data.title} — The Black Epicure`} description={post.data.description} ogType="article">
-  <script slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
-  <Article title={post.data.title} date={post.data.date} description={post.data.description}>
+<Layout
+  title={`${post.entry.data.title} — The Black Epicure`}
+  description={post.entry.data.description}
+  ogType="article"
+>
+  <script
+    slot="head"
+    type="application/ld+json"
+    set:html={JSON.stringify(jsonLd)}
+  />
+  <Article
+    title={post.entry.data.title}
+    date={post.entry.data.date}
+    description={post.entry.data.description}
+    currentCount={post.currentCount}
+  >
     <Content />
   </Article>
 </Layout>

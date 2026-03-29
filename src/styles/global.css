@@ -105,6 +105,10 @@ svg {
   margin-bottom: 2.5px; /* Fine-tune because "middle" isn't always perfect */
 }
 
+.post-counter {
+  color: var(--color-border);
+}
+
 
 
 

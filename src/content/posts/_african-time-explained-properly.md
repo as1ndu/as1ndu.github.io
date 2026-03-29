@@ -1,10 +1,12 @@
 ---
 title: African Time Explained Properly
-date: 2025-07-09
-description: ""
 draft: true
+date: 2025-07-09
+description: Description
 ---
 \- clock time
+
+- https://archive.is/g3Bok
 
 Computer science
 

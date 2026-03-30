@@ -1,10 +1,9 @@
 ---
-title : "Random walk in 2 lines of J"
-date  : 2022-10-08
-description: "description"
-draft : true
+title: Random walk in 2 lines of J
+draft: false
+date: 2022-10-08
+description: Random walks in the Iversonian J programming language
 ---
-
 Of all the many programming languages, none has quite caught my attention like the "Iversonian"
 programming languages, that is, languages like [APL](https://tryapl.org/), [Shakti](https://estradajke.github.io/k9-simples/k9/index.html), [Ivy](https://pkg.go.dev/robpike.io/ivy), [BQN](https://mlochbaum.github.io/BQN/) and [J](http://www.jsoftware.com/) - the subject of this blog post.
 

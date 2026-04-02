@@ -15,3 +15,5 @@ https://netzpolitik.org/2024/mastodon-and-peertube-eu-closing-up-shop-in-fediver
 https://ashfurrow.com/blog/mastodon-technology-shutdown/
 
 https://www.theverge.com/2024/12/16/24322574/sub-club-mastodon-mammoth-fediverse-shutting-down
+
+Zero seeders

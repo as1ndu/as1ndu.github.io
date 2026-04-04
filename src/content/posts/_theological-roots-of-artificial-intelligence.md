@@ -1,5 +1,5 @@
 ---
-title: Theological roots of Artificial Intelligence
+title: The Theological Roots of AI
 draft: true
 date: 2026-04-06
 description: Should people in ML research study theology? Does thinking in
@@ -42,3 +42,5 @@ Warren McClulloch (https://www.youtube.com/watch?v=wawMjJUCMVw )
   
 \- Geoffre Hinton decendat of George boole  
 https://archive.is/TRh2S
+
+The catholic church has provided top physicists, i don't think ist far fetched to 

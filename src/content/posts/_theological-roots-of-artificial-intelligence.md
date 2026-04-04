@@ -36,8 +36,7 @@ Relating this to theology, it is said that, "He had a spiritual experience as a 
 Warren McCulloch, inventor of Neural Networks  
   
 "I was soaked in theology" — Warren McCulloch  
-  
-  
+ 
 Warren McClulloch (https://www.youtube.com/watch?v=wawMjJUCMVw )  
   
 \- Geoffre Hinton decendat of George boole  

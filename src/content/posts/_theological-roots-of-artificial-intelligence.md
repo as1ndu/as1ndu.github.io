@@ -1,5 +1,5 @@
 ---
-title: The Theological Roots of AI
+title: Theological Roots of AI
 draft: true
 date: 2026-04-06
 description: Should people in ML research study theology? Does thinking in

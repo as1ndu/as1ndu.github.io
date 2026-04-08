@@ -110,6 +110,8 @@ So a quick heuristic of identifying blockchain "snake-oil" is to see if it solve
 
 Only business applications that have a principal-agent problem need a blockchain nothing else does.
 
+https://en.wikipedia.org/wiki/Confiscation_of_Russian_central_bank_funds
+
 
 [^1]: Robin Hanson called it ["a tough call"](https://www.overcomingbias.com/2015/02/31017.html) and Bruce Schneier thinks it's out right useless. He thinks it just [shifts trust around](https://www.wired.com/story/theres-no-good-reason-to-trust-blockchain-technology/)
 
